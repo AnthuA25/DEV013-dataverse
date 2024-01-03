@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-dark-blue);
+  color: var(--color-sky);
+  font-family: var(--font-family);
+}
+
+:root {
+  --color-dark-blue: #0b1321;
+  --color-white:white;
+  --color-light-blue: #152834;
+  --color-light-sky: #0b2b2e;
+  --color-sky: #8cefe9;
+  --color-black: #020202;
+  --color-gray: #7b8595;
+  --color-purple: #7d3ea4;
+  --color-purple2: #9e55b8;
+  --color-green: #55b870;
+  --color-red: #c33030;
+  --color-dark-blue2: #5594b8;
+  --color-pink: #b85567;
+  --color-yellow: #aab855;
+  --color-brown: #b89055;
+  --color-orange: #db9731;
+  --color-sky2: #30a3c7;
+  --color-gray2: #cbbba3;
+  --color-dark-purple: #3b0b46;
+  --color-dark-green: #3b0b46;
+  --font-family: "JetBrains Mono", monospace;
+}
+
+header {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+header img {
+  width: 50px;
+}
+main {
+  background-color: var(--color-light-sky);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+  margin-bottom:60px;
+  /* min-height: 110px; */
+}
+
+.search{
+  position: relative;
+}
+
+div > img{
+  width: 50px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+input[type=text]{
+  border: 4px solid var(--color-white);
+  background-color: transparent;
+  background-color: none;
+  border-radius: 40px;
+  width: 300px;
+  height: 60px;
+  padding:20px 20px 20px 70px;
+}
+                                                                                                                                      
+::placeholder{
+  color: var(--color-gray);
+  font-size: 1.5rem;
+}
+
+
+.filters{
+  display: flex;
+  /* flex-direction: column; */                                           
+  flex-wrap: wrap;
+  justify-content: start;
+  gap:40px;
+}
+
+label[for="filterType"] {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-right: 40px;
+}
+label[for="orderName"] {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+select[name="filter-type"]{
+  background-color: transparent;
+  border-radius: 20px;
+  border: 4px solid var(--color-white);
+  color: var(--color-gray);
+  width: 100px;
+  /* height: 30px; */
+  padding: 10px;
+}
+
+select[name="order-name"]{
+  background-color: transparent;
+  border-radius: 20px;
+  border: 4px solid var(--color-white);
+  color: var(--color-gray);
+  width: 100px;
+  /* height: 30px; */
+  padding: 10px;
+}
+
+button[type="reset"]{
+  background-color: var(--color-sky);
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  color: #0D091E;
+  font-weight: bold;
+  width:1000px;
+  height: 60px;
+  font-size: 1.5rem;
+  /* min-width: 500px; */
+}
+
+/* Main */
+#root{
+  display: flex;
+  flex-wrap: wrap;
+  /* border: white 2px solid; */
+  justify-content: space-around;
+}
+
+dl[itemtype="Pokemones"]{
+  background-color: var(--color-light-blue);
+  width: 363px;
+  height: 510px;
+  border-radius: 0 60px 0 60px;
+}
+dt, dd{
+  /* border: 2px solid white; */
+  margin: 0;
+}
+dd[itemprop="icons"]{
+  display: flex;
+  justify-content: start;
+  border-radius: 0 60px 0 0;
+  background: linear-gradient(var(--color-purple2), var(--color-green));
+  width: 363px;
+  height: 174px;
+}
+dd[itemprop="icons"] > img{
+ width: 40px;
+ height: 40px;
+}
+
+
+dd[itemprop="icons2"]{
+  display: flex;
+  justify-content: start;
+  border-radius: 0 60px 0 0;
+  background: var(--color-red);
+  width: 363px;
+  height: 174px;
+}
+
+dd[itemprop="icons2"] > img{
+  width: 40px;
+  height: 40px;
+}
+
+dd[itemprop="icons3"]{
+  display: flex;
+  justify-content: start;
+  border-radius: 0 60px 0 0;
+  background: var(--color-dark-blue2);
+  width: 363px;
+  height: 174px;
+}
+
+dd[itemprop="icons3"] > img{
+  width: 40px;
+  height: 40px;
+}
+
+dd[itemprop="image"]{
+  /* position: relative;
+  bottom: 200px; */
+  margin-top: -200px;
+}
+dd[itemprop="image"] > img{
+  height: 400px;
+  margin-left: -30px;
+  /* border: 2px solid white; */
+}
+
+dd[itemprop="image"] > img:hover{
+  transform: scale(1.2);
+}
+
+dd[itemprop="name"]{
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center;
+  /* position: relative; */
+  /* bottom: 199px; */
+  margin-top: -10px;
+}
+
+dt{
+  font-weight: bold;
+  /* position: relative;
+  bottom: 190px;
+  margin-right: 20px; */
+  margin-left: 20px;
+  margin-top: 40px;
+
+}
+dd[itemprop="weaknesses"]{
+  margin-top: -35px;
+  margin-left: 140px;
+}
+dd[itemprop="weaknesses"] > img{
+  width: 40px;
+}
+
+footer p{
+    text-align: center;
+}
+
+@media (max-width:992px){
+  button[type="reset"]{
+    width:500px;
+    /* min-width: 500px; */
+  }
+  
+}
+@media (max-width:768px){
+  main{
+    /* justify-content: center; */
+  }
+}
+@media (max-width:480px){
+  main{
+    justify-content: center;
+  }
+  .filters{
+    margin-top: 10px;
+    justify-content: center;
+  }
+  button[type="reset"]{
+    margin-top: 10px;
+    width:250px;
+    /* min-width: 500px; */
+  }
+}
