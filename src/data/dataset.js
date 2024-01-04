@@ -3,8 +3,12 @@ export default [
     "id": 1,
     "name": "Bulbasaur",
     "type": "Grass/Poison",
+    "type_image": ["./assets/planta.png","./assets/veneno.png"],
+    "type_color" : ["#9e55b8","#55b870"],
     "image": "./assets/Bulbasaur..png",
-    "weaknesses": ["Fire", "Flying", "Ice", "Psychic"],
+    "weaknesses": [
+      "Fire", "Flying", "Ice", "Psychic"
+    ],
     "baseStats": {
       "hp": 45,
       "attack": 49,
@@ -20,6 +24,7 @@ export default [
     "id": 4,
     "name": "Charmander",
     "type": "Fire",
+    "type_color" : ["#c33030;"],
     "image": "./assets/Charmander.png",
     "weaknesses": ["Water", "Rock", "Ground"],
     "baseStats": {
