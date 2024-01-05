@@ -11,7 +11,7 @@ body {
 
 :root {
   --color-dark-blue: #0b1321;
-  --color-white:white;
+  --color-white: white;
   --color-light-blue: #152834;
   --color-light-sky: #0b2b2e;
   --color-sky: #8cefe9;
@@ -29,7 +29,7 @@ body {
   --color-sky2: #30a3c7;
   --color-gray2: #cbbba3;
   --color-dark-purple: #3b0b46;
-  --color-dark-green: #3b0b46;
+  --color-dark-green: #33A021;
   --font-family: "JetBrains Mono", monospace;
 }
 
@@ -42,63 +42,59 @@ header {
 header img {
   width: 50px;
 }
+
 main {
   background-color: var(--color-light-sky);
   height: 300px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom:60px;
+  margin-bottom: 60px;
   /* min-height: 110px; */
 }
 
-.search{
-  position: relative;
-}
-
-div > img{
+section > img {
   width: 50px;
-  position: absolute;
-  bottom: 5px;
-  left: 10px;
+  margin-right: -60px;
+  margin-bottom: -18px;
 }
-input[type=text]{
+input[type="text"] {
   border: 4px solid var(--color-white);
   background-color: transparent;
   background-color: none;
   border-radius: 40px;
   width: 300px;
   height: 60px;
-  padding:20px 20px 20px 70px;
-}
-                                                                                                                                      
-::placeholder{
+  padding: 20px 20px 20px 70px;
   color: var(--color-gray);
   font-size: 1.5rem;
 }
 
+::placeholder{
+  font-size: 1.5rem;
+}
 
-.filters{
+.filters {
   display: flex;
-  /* flex-direction: column; */                                           
   flex-wrap: wrap;
   justify-content: start;
-  gap:40px;
+  gap: 40px;
 }
 
-label[for="filterType"] {
+label[for="type"],label[for="name"] {
   font-size: 1rem;
   font-weight: bolder;
-  margin-right: 40px;
+  /* margin-right: 40px; */
+  margin-top: 10px;
 }
-label[for="orderName"] {
+/* label[for="name"] {
   font-size: 1rem;
   font-weight: bolder;
   margin-right: 20px;
-}
-select[name="filter-type"]{
+} */
+select{
   background-color: transparent;
   border-radius: 20px;
   border: 4px solid var(--color-white);
@@ -108,62 +104,53 @@ select[name="filter-type"]{
   padding: 10px;
 }
 
-select[name="order-name"]{
-  background-color: transparent;
-  border-radius: 20px;
-  border: 4px solid var(--color-white);
-  color: var(--color-gray);
-  width: 100px;
-  /* height: 30px; */
-  padding: 10px;
-}
-
-button[type="reset"]{
+button[type="reset"] {
   background-color: var(--color-sky);
   border: none;
   border-radius: 20px;
   padding: 15px;
-  color: #0D091E;
+  color: #0d091e;
   font-weight: bold;
-  width:1000px;
+  width: 1000px;
   height: 60px;
   font-size: 1.5rem;
   /* min-width: 500px; */
 }
 
 /* Main */
-#root{
+#root {
   display: flex;
   flex-wrap: wrap;
-  /* border: white 2px solid; */
   justify-content: space-around;
 }
 
-dl[itemtype="Pokemones"]{
+dl[itemtype="pokemons"] {
   background-color: var(--color-light-blue);
   width: 363px;
   height: 510px;
   border-radius: 0 60px 0 60px;
 }
-dt, dd{
-  /* border: 2px solid white; */
+dt,
+dd {
+  display: flex;
+  justify-content: center;
   margin: 0;
 }
-dd[itemprop="icons"]{
+dd[itemprop="type"] {
   display: flex;
   justify-content: start;
   border-radius: 0 60px 0 0;
-  background: linear-gradient(var(--color-purple2), var(--color-green));
   width: 363px;
   height: 174px;
 }
-dd[itemprop="icons"] > img{
- width: 40px;
- height: 40px;
+
+dd[itemprop="type"] > img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
 }
 
-
-dd[itemprop="icons2"]{
+/* dd[itemprop="icons2"] {
   display: flex;
   justify-content: start;
   border-radius: 0 60px 0 0;
@@ -172,12 +159,12 @@ dd[itemprop="icons2"]{
   height: 174px;
 }
 
-dd[itemprop="icons2"] > img{
+dd[itemprop="icons2"] > img {
   width: 40px;
   height: 40px;
 }
 
-dd[itemprop="icons3"]{
+dd[itemprop="icons3"] {
   display: flex;
   justify-content: start;
   border-radius: 0 60px 0 0;
@@ -186,79 +173,78 @@ dd[itemprop="icons3"]{
   height: 174px;
 }
 
-dd[itemprop="icons3"] > img{
+dd[itemprop="icons3"] > img {
   width: 40px;
   height: 40px;
-}
+} */
 
-dd[itemprop="image"]{
-  /* position: relative;
-  bottom: 200px; */
+dd[itemprop="image"] {
   margin-top: -200px;
 }
-dd[itemprop="image"] > img{
-  height: 400px;
-  margin-left: -30px;
-  /* border: 2px solid white; */
+dd[itemprop="image"] > img {
+  height: 350px;
+  margin-top: 30px;
 }
 
-dd[itemprop="image"] > img:hover{
-  transform: scale(1.2);
+dd[itemprop="image"] > img:hover {
+  transform: scale(1.1) translate(20px);
+/* skew(30deg, 20deg); */
+/* translate(10px) */
 }
 
-dd[itemprop="name"]{
+dd[itemprop="name"] {
   font-weight: bolder;
   font-size: 2rem;
   text-align: center;
-  /* position: relative; */
-  /* bottom: 199px; */
   margin-top: -10px;
 }
 
-dt{
+dt {
   font-weight: bold;
-  /* position: relative;
-  bottom: 190px;
-  margin-right: 20px; */
-  margin-left: 20px;
+  margin-left: -240px;
   margin-top: 40px;
-
 }
-dd[itemprop="weaknesses"]{
-  margin-top: -35px;
-  margin-left: 140px;
+dd[itemprop="weaknesses"] {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  margin-left: 150px;
 }
-dd[itemprop="weaknesses"] > img{
+dd[itemprop="weaknesses"] > img {
   width: 40px;
 }
 
-footer p{
-    text-align: center;
+footer p {
+  text-align: center;
 }
 
-@media (max-width:992px){
-  button[type="reset"]{
-    width:500px;
-    /* min-width: 500px; */
-  }
-  
-}
-@media (max-width:768px){
-  main{
-    /* justify-content: center; */
+@media (max-width: 992px) {
+  button[type="reset"] {
+    width: 500px;
   }
 }
-@media (max-width:480px){
-  main{
+@media (max-width: 768px) {
+  main {
     justify-content: center;
   }
-  .filters{
+  .filters {
     margin-top: 10px;
     justify-content: center;
   }
-  button[type="reset"]{
+  button[type="reset"] {
     margin-top: 10px;
-    width:250px;
-    /* min-width: 500px; */
+  }
+}
+@media (max-width: 480px) {
+  main {
+    justify-content: center;
+  }
+  .filters {
+    margin-top: 10px;
+    justify-content: center;
+  }
+  button[type="reset"] {
+    margin-top: 10px;
+    width: 250px;
   }
 }

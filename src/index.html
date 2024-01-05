@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Data Pokemon</title>
-    <link rel="icon" href="assets/logo.png">
+    <link rel="icon" href="assets/logo.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,114 +15,81 @@
 
   <body>
     <header>
-      <h1>P<img src="assets/pokebola.png" alt="Pokebola" />kedéx</h1>
+      <!-- <img src="" alt="logo"> -->
+      <h1>P<img src="assets/pokebola.png" alt="" />kéDex</h1>
     </header>
     <main>
-      <div class="search">
-        <img src="assets/pokebola.png" alt="" />
-        <input type="text" placeholder="Buscar Pokémon" />
-      </div>
-      <div class="filters">
-        <div class="filter-type">
-          <label for="filterType">Filtrar por Tipo :</label>
-          <select
-            name="filter-type"
-            id="filterType"
-            data-testid="select-filter"
-          >
-            <option value="Fuego">Fuego</option>
-            <option value="Agua">Agua</option>
-            <option value="Electrico">Eléctrico</option>
-            <option value="Lucha">Lucha</option>
-            <option value="Normal">Normal</option>
-            <option value="Planta">Planta</option>
-            <option value="Psiquico">Psiquico</option>
-            <option value="Veneno">Veneno</option>
-            <option value="Fantasma">Fantasma</option>
-          </select>
-        </div>
-        <div class="order-name">
-          <label for="orderName">Ordenar por Nombre   :</label>
-          <select name="order-name" id="orderName" data-testid="select-sort">
-            <option value="asc">A-Z</option>
-            <option value="desc">Z-A</option>
-          </select>
-        </div>
-      </div>
-      <div>
-        <button type="reset" data-testid="button-clear">
+      <section>
+        <img src="assets/pokebola.png" alt="" /><input
+          type="text"
+          placeholder="Buscar Pokémon"
+        />
+      </section>
+      <section class="filters">
+        <label for="type">Filtrar por tipo:</label>
+        <select name="type" id="type" data-testid="select-filter">
+          <option value="fuego">Fuego</option>
+          <option value="Agua">Agua</option>
+          <option value="Eléctrico">Eléctrico</option>
+          <option value="Lucha">Lucha</option>
+          <option value="Normal">Normal</option>
+          <option value="Planta">Planta</option>
+          <option value="Psiquico">Psiquico</option>
+          <option value="Veneno">Veneno</option>
+          <option value="Fantasma">Fantasma</option>
+        </select>
+        <label for="name">Ordenar por nombre:</label>
+        <select name="name" id="name" data-testid="select-sort">
+          <option value="asc">A-Z</option>
+          <option value="desc">Z-A</option>
+        </select>
+      </section>
+      <section>
+        <button data-testid="button-clear" type="reset">
           Resetear Filtros
         </button>
-      </div>
+      </section>
     </main>
-
-    <div id="root">
-      <dl itemtype="Pokemones">
-        <dd itemprop="icons">
-          <img
-            class="tipo"
-            src="assets/planta.png"
-            alt="imagen de icono de tipo planta"
-          />
-          <img
-            class="tipo"
-            src="assets/veneno.png"
-            alt="imagen de icono de tipo veneno"
-          />
+    <section id="root">
+      <!-- <dl itemtype="pokemons" >
+        <dd itemprop="ability">
+          <img src="assets/planta.png" alt="">
+          <img src="assets/veneno.png" alt="">
         </dd>
-        <dd itemprop="image">
-          <img class="pokemon" src="assets/Bulbasaur..png" alt="" />
-        </dd>
-        <dd itemprop="name">BULBASAUR</dd>
+        <dd itemprop="image"><img src="assets/Bulbasaur..png" alt=""></dd>
+        <dd itemprop="name">Bulbasaur</dd>
         <dt>Debilidades</dt>
-        <dd itemprop="weaknesses">
-          <img src="assets/psiquico.png" alt="icono de tipo psiquico" />
-          <img src="assets/fuego.png" alt="icono de tipo fuego" />
-          <img src="assets/volador.png" alt="icono de tipo volador" />
-          <img src="assets/hielo.png" alt="icono de tipo hielo" />
+        <dd itemprop="weaknesses"><img src="assets/psiquico.png" alt="">
+          <img src="assets/fuego.png" alt="">
+          <img src="assets/volador.png" alt="">
+          <img src="assets/hielo.png" alt="">
         </dd>
       </dl>
-
-      <dl itemtype="Pokemones">
-        <dd itemprop="icons2">
-          <img
-            class="tipo2"
-            src="assets/fuego.png"
-            alt="imagen de icono de tipo planta"
-          />
+      <dl itemtype="pokemons" itemscope>
+        <dd itemprop="ability">
+          <img src="assets/fuego.png" alt="" >
         </dd>
-        <dd itemprop="image">
-          <img class="pokemon" src="assets/Charmander.png" alt="" />
-        </dd>
-        <dd itemprop="name">CHARMANDER</dd>
+        <dd itemprop="image"><img src="assets/Charmander.png" alt=""></dd>
+        <dd itemprop="name">Charmander</dd>
         <dt>Debilidades</dt>
-        <dd itemprop="weaknesses">
-          <img src="assets/roca.png" alt="icono de tipo psiquico" />
-          <img src="assets/tierra.png" alt="icono de tipo psiquico" />
-          <img src="assets/agua.png" alt="icono de tipo psiquico" />
+        <dd itemprop="weaknesses"><img src="assets/roca.png" alt="">
+          <img src="assets/tierra.png" alt="">
+          <img src="assets/agua.png" alt="">
         </dd>
       </dl>
-
-      <dl itemtype="Pokemones">
-        <dd itemprop="icons3">
-          <img
-            class="tipo3"
-            src="assets/agua.png"
-            alt="imagen de icono de tipo planta"
-          />
+      <dl itemtype="pokemons" itemscope>
+        <dd itemprop="ability">
+          <img src="assets/agua.png" alt="">
         </dd>
-        <dd itemprop="image">
-          <img class="pokemon" src="assets/Squirtle_2.png" alt="" />
-        </dd>
-        <dd itemprop="name">SQUIRTLE</dd>
+        <dd itemprop="image"><img src="assets/Squirtle_2.png" alt=""></dd>
+        <dd itemprop="name">Squirtle_2</dd>
         <dt>Debilidades</dt>
-        <dd itemprop="weaknesses">
-          <img src="assets/planta.png" alt="icono de tipo psiquico" />
-          <img src="assets/electrico.png" alt="icono de tipo psiquico" />
+        <dd itemprop="weaknesses"><img src="assets/planta.png" alt="">
+          <img src="assets/electrico.png" alt="">
         </dd>
       </dl>
-    </div>
-
+   -->
+    </section>
     <footer>
       <p>Copyright © 2023 Nataly Fernandez y Aylin Santa Cruz Vargas</p>
     </footer>
