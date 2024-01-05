@@ -2,13 +2,17 @@ export default [
   {
     "id": 1,
     "name": "Bulbasaur",
-    "type": "Grass/Poison",
-    "type_image": ["./assets/planta.png","./assets/veneno.png"],
-    "type_color" : ["#9e55b8","#55b870"],
+    "type":{
+        "type_name": ["Grass","Poison"],
+        "type_image": ["./assets/planta.png","./assets/veneno.png"],
+    },
     "image": "./assets/Bulbasaur..png",
-    "weaknesses": [
-      "Fire", "Flying", "Ice", "Psychic"
-    ],
+    "weaknesses":{
+      "weaknesses_name": [
+        "Fire", "Flying", "Ice", "Psychic"
+      ],
+      "weaknesses_image":["./assets/fuego.png","./assets/volador.png","./assets/hielo.png","./assets/psiquico.png"],
+    },
     "baseStats": {
       "hp": 45,
       "attack": 49,
@@ -23,10 +27,15 @@ export default [
   {
     "id": 4,
     "name": "Charmander",
-    "type": "Fire",
-    "type_color" : ["#c33030;"],
+    "type":{
+      "type_name": ["Fire"],
+      "type_image":["./assets/fuego.png"],
+    },
     "image": "./assets/Charmander.png",
-    "weaknesses": ["Water", "Rock", "Ground"],
+    "weaknesses":{
+      "weaknesses_name": ["Water", "Rock", "Ground"],
+      "weaknesses_image":["./assets/agua.png","./assets/roca.png","./assets/tierra.png"],
+    },
     "baseStats": {
       "hp": 39,
       "attack": 52,
@@ -41,9 +50,16 @@ export default [
   {
     "id": 7,
     "name": "Squirtle",
-    "type": "Water",
+    "type":{
+      "type_name": ["Water"],
+      "type_image": ["./assets/agua.png"],
+      "type_color" : ["#c33030;"],
+    },
     "image": "./assets/Squirtle_2.png",
-    "weaknesses": ["Electric", "Grass"],
+    "weaknesses":{
+      "weaknesses_name": ["Electric", "Grass"],
+      "weaknesses_image":["./assets/electrico.png","./assets/planta.png"],
+    },
     "baseStats": {
       "hp": 44,
       "attack": 48,
@@ -58,9 +74,15 @@ export default [
   {
     "id": 35,
     "name": "Clefairy",
-    "type": "Fairy",
+    "type":{
+      "type_name": ["Fairy"],
+      "type_image":["./assets/hada.png"],
+    },
     "image": "./assets/Clefairy2.png",
-    "weaknesses": ["Steel", "Poison"],
+    "weaknesses":{
+      "weaknesses_name": ["Steel", "Poison"],
+      "weaknesses_image":["./assets/acero.png","./assets/veneno.png"],
+    },
     "baseStats": {
       "hp": 70,
       "attack": 45,
@@ -75,9 +97,15 @@ export default [
   {
     "id": 25,
     "name": "Pikachu",
-    "type": "Electric",
+    "type":{
+      "type_name": ["Electric"],
+      "type_image":["./assets/electrico.png"],
+    },
     "image": "./assets/Pikachu2.png",
-    "weaknesses": ["Ground"],
+    "weaknesses":{
+      "weaknesses_name": ["Ground"],
+      "weaknesses_image":["./assets/tierra.png"],
+    },
     "baseStats": {
       "hp": 35,
       "attack": 55,
@@ -92,9 +120,15 @@ export default [
   {
     "id": 50,
     "name": "Diglett",
-    "type": "Ground",
+    "type":{
+      "type_name": ["Ground"],
+      "type_image":["./assets/tierra.png"],
+    },
     "image": "./assets/Diglett.png",
-    "weaknesses": ["Water", "Grass", "Ice"],
+    "weaknesses":{
+      "weaknesses_name": ["Water", "Grass", "Ice"],
+      "weaknesses_image":["./assets/agua.png","./assets/planta.png","./assets/hielo.png"],
+    },
     "baseStats": {
       "hp": 10,
       "attack": 55,
@@ -109,9 +143,15 @@ export default [
   {
     "id": 23,
     "name": "Ekans",
-    "type": "Poison",
+    "type":{
+      "type_name": ["Poison"],
+      "type_image":["./assets/veneno.png"],
+    },
     "image": "./assets/Ekans.png",
-    "weaknesses": ["Ground", "Psychic"],
+    "weaknesses":{
+      "weaknesses_name": ["Ground", "Psychic"],
+      "weaknesses_image":["./assets/tierra.png","./assets/psiquico.png"],
+    },
     "baseStats": {
       "hp": 35,
       "attack": 60,
@@ -126,9 +166,15 @@ export default [
   {
     "id": 66,
     "name": "Machop",
-    "type": "Fighting",
+    "type":{
+      "type_name": ["Fighting"],
+      "type_image":["./assets/lucha.png"],
+    },
     "image": "./assets/Machop.png",
-    "weaknesses": ["Flying", "Psychic", "Fairy"],
+    "weaknesses":{
+      "weaknesses_name": ["Flying", "Psychic", "Fairy"],
+      "weaknesses_image":["./assets/volador.png","./assets/psiquico.png","./assets/hada.png"],
+    },
     "baseStats": {
       "hp": 70,
       "attack": 80,
@@ -143,9 +189,15 @@ export default [
   {
     "id": 16,
     "name": "Pidgey",
-    "type": "Normal/Flying",
+    "type":{
+      "type_name": ["Normal","Flying"],
+      "type_image":["./assets/volador.png","./assets/normal.png"],
+    },
     "image": "./assets/Pidgey.png",
-    "weaknesses": ["Electric", "Rock"],
+    "weaknesses":{
+      "weaknesses_name": ["Electric", "Rock"],
+      "weaknesses_image":["./assets/electrico.png","./assets/roca.png"],
+    },
     "baseStats": {
       "hp": 40,
       "attack": 45,
@@ -160,9 +212,15 @@ export default [
   {
     "id": 2,
     "name": "Ivysaur",
-    "type": "Grass/Poison",
+    "type":{
+      "type_name": ["Grass","Poison"],
+      "type_image":["./assets/planta.png","./assets/veneno.png"],
+    },
     "image": "./assets/Ivysaur.png",
-    "weaknesses": ["Fire", "Flying", "Ice", "Psychic"],
+    "weaknesses":{
+      "weaknesses_name": ["Fire", "Flying", "Ice", "Psychic"],
+      "weaknesses_image":["./assets/fuego.png","./assets/volador.png","./assets/hielo.png","./assets/psiquico.png"],
+    },
     "baseStats": {
       "hp": 60,
       "attack": 62,
@@ -177,9 +235,15 @@ export default [
   {
     "id": 92,
     "name": "Gastly",
-    "type": "Ghost/Poison",
+    "type":{
+      "type_name": ["Ghost","Poison"],
+      "type_image":["./assets/fantasma.png","./assets/veneno.png"],
+    },
     "image": "./assets/Gastly.png",
-    "weaknesses": ["Ground", "Psychic", "Ghost", "Dark"],
+    "weaknesses":{
+      "weaknesses_name": ["Ground", "Psychic", "Ghost", "Dark"],
+      "weaknesses_image":["./assets/tierra.png","./assets/psiquico.png","./assets/fantasma.png","./assets/oscuro.png"],
+    },
     "baseStats": {
       "hp": 30,
       "attack": 35,
@@ -194,9 +258,15 @@ export default [
   {
     "id": 48,
     "name": "Venonat",
-    "type": "Bug/Poison",
+    "type":{
+      "type_name": ["Bug","Poison"],
+      "type_image":["./assets/planta.png","./assets/veneno.png"],
+    },
     "image": "./assets/Venonat.png",
-    "weaknesses": ["Flying", "Rock", "Fire", "Psychic"],
+    "weaknesses":{
+      "weaknesses_name": ["Flying", "Rock", "Fire", "Psychic"],
+      "weaknesses_image":["./assets/volador.png","./assets/roca.png","./assets/fuego.png","./assets/psiquico.png"],
+    },
     "baseStats": {
       "hp": 60,
       "attack": 55,
