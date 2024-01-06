@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Data Pokemon</title>
-    <link rel="icon" href="assets/logo.png" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;600&family=Jomhuria&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <!-- <img src="" alt="logo"> -->
-      <h1>P<img src="assets/pokebola.png" alt="" />kéDex</h1>
-    </header>
-    <main>
-      <section>
-        <img src="assets/pokebola.png" alt="" /><input
-          type="text"
-          placeholder="Buscar Pokémon"
-        />
-      </section>
-      <section class="filters">
-        <label for="type">Filtrar por tipo:</label>
-        <select name="type" id="type" data-testid="select-filter">
-          <option value="fuego">Fuego</option>
-          <option value="Agua">Agua</option>
-          <option value="Eléctrico">Eléctrico</option>
-          <option value="Lucha">Lucha</option>
-          <option value="Normal">Normal</option>
-          <option value="Planta">Planta</option>
-          <option value="Psiquico">Psiquico</option>
-          <option value="Veneno">Veneno</option>
-          <option value="Fantasma">Fantasma</option>
-        </select>
-        <label for="name">Ordenar por nombre:</label>
-        <select name="name" id="name" data-testid="select-sort">
-          <option value="asc">A-Z</option>
-          <option value="desc">Z-A</option>
-        </select>
-      </section>
-      <section>
-        <button data-testid="button-clear" type="reset">
-          Resetear Filtros
-        </button>
-      </section>
-    </main>
-    <section id="root">
-      <!-- <dl itemtype="pokemons" >
+<head>
+  <meta charset="utf-8" />
+  <title>Data Pokemon</title>
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;600&family=Jomhuria&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <!-- <img src="" alt="logo"> -->
+    <h1>P<img src="assets/pokebola.png" alt="" />kéDex</h1>
+  </header>
+  <main>
+    <section>
+      <img src="assets/pokebola.png" alt="" /><input type="text" placeholder="Buscar Pokémon" />
+    </section>
+    <section class="filters">
+      <label for="type">Filtrar por tipo:</label>
+      <select name="type" id="type" data-testid="select-filter">
+        <option value="fuego">Fuego</option>
+        <option value="Agua">Agua</option>
+        <option value="Eléctrico">Eléctrico</option>
+        <option value="Lucha">Lucha</option>
+        <option value="Normal">Normal</option>
+        <option value="Planta">Planta</option>
+        <option value="Psiquico">Psiquico</option>
+        <option value="Veneno">Veneno</option>
+        <option value="Fantasma">Fantasma</option>
+      </select>
+      <label for="name">Ordenar por nombre:</label>
+      <select name="name" id="name" data-testid="select-sort">
+        <option value="default"></option>
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+      </select>
+    </section>
+    <section>
+      <button data-testid="button-clear" type="reset">
+        Resetear Filtros
+      </button>
+    </section>
+  </main>
+  <section id="root">
+    <!-- <dl itemtype="pokemons" >
         <dd itemprop="ability">
           <img src="assets/planta.png" alt="">
           <img src="assets/veneno.png" alt="">
@@ -89,11 +86,12 @@
         </dd>
       </dl>
    -->
-    </section>
-    <footer>
-      <p>Copyright © 2023 Nataly Fernandez y Aylin Santa Cruz Vargas</p>
-    </footer>
+  </section>
+  <footer>
+    <p>Copyright © 2023 Nataly Fernandez y Aylin Santa Cruz Vargas</p>
+  </footer>
 
-    <script src="main.js" type="module"></script>
-  </body>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
