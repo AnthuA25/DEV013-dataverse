@@ -1,9 +1,5 @@
 // Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
 
-export const filterData = (data, filterBy, value) => {
-  return 'example';
-};
-
 //data=data, sortBy=name, sorOrder=asc, desc
 export const sortData = (data, sortBy, sortOrder) => {
   const sortedData = [...data]; //create copy array
@@ -25,6 +21,11 @@ export const sortData = (data, sortBy, sortOrder) => {
 
   })
 
-
   return sortedData;
+}
+
+export const filterData = (data, filterBy, value) => {
+  const result = data.filter(type => type.type[filterBy].includes(value));
+  return result;
+
 };

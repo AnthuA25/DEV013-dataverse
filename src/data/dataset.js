@@ -53,7 +53,6 @@ export default [
     "type":{
       "type_name": ["Water"],
       "type_image": ["./assets/agua.png"],
-      "type_color" : ["#c33030;"],
     },
     "image": "./assets/Squirtle_2.png",
     "weaknesses":{
@@ -260,7 +259,7 @@ export default [
     "name": "Venonat",
     "type":{
       "type_name": ["Bug","Poison"],
-      "type_image":["./assets/planta.png","./assets/veneno.png"],
+      "type_image":["./assets/bicho.png","./assets/veneno.png"],
     },
     "image": "./assets/Venonat.png",
     "weaknesses":{
