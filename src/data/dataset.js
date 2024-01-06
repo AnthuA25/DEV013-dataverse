@@ -3,7 +3,12 @@ export default [
     "id": 1,
     "name": "Bulbasaur",
     "type": "Grass/Poison",
-    "image": "/assets/Bulbasaur.png",
+    "type_icon": {
+      "plant": ".assets/planta" ,
+      "poison": ".assets/veneno.png"
+
+    },
+    "image": "./assets/Bulbasaur.png",
     "weaknesses": ["Fire", "Flying", "Ice", "Psychic"],
     "baseStats": {
       "hp": 45,
@@ -20,7 +25,7 @@ export default [
     "id": 4,
     "name": "Charmander",
     "type": "Fire",
-    "image": "/assets/charmander.png",
+    "image": "./assets/charmander.png",
     "weaknesses": ["Water", "Rock", "Ground"],
     "baseStats": {
       "hp": 39,
@@ -37,7 +42,7 @@ export default [
     "id": 7,
     "name": "Squirtle",
     "type": "Water",
-    "image": "/assets/squirtle_2.png",
+    "image": "./assets/squirtle_2.png",
     "weaknesses": ["Electric", "Grass"],
     "baseStats": {
       "hp": 44,
@@ -54,7 +59,7 @@ export default [
     "id": 35,
     "name": "Clefairy",
     "type": "Fairy",
-    "image": "/assets/clefairy.png",
+    "image": "./assets/clefairy.png",
     "weaknesses": ["Steel", "Poison"],
     "baseStats": {
       "hp": 70,
@@ -71,7 +76,7 @@ export default [
     "id": 25,
     "name": "Pikachu",
     "type": "Electric",
-    "image": "/assets/pikachu.png",
+    "image": "./assets/pikachu.png",
     "weaknesses": ["Ground"],
     "baseStats": {
       "hp": 35,
@@ -88,7 +93,7 @@ export default [
     "id": 50,
     "name": "Diglett",
     "type": "Ground",
-    "image": "/assets/diglett.png",
+    "image": "./assets/diglett.png",
     "weaknesses": ["Water", "Grass", "Ice"],
     "baseStats": {
       "hp": 10,
@@ -105,7 +110,7 @@ export default [
     "id": 23,
     "name": "Ekans",
     "type": "Poison",
-    "image": "/assets/ekans.png",
+    "image": "./assets/ekans.png",
     "weaknesses": ["Ground", "Psychic"],
     "baseStats": {
       "hp": 35,
@@ -122,7 +127,7 @@ export default [
     "id": 66,
     "name": "Machop",
     "type": "Fighting",
-    "image": "/assets/machop.png",
+    "image": "./assets/machop.png",
     "weaknesses": ["Flying", "Psychic", "Fairy"],
     "baseStats": {
       "hp": 70,
@@ -139,7 +144,7 @@ export default [
     "id": 16,
     "name": "Pidgey",
     "type": "Normal/Flying",
-    "image": "/assets/pidgey.png",
+    "image": "./assets/pidgey.png",
     "weaknesses": ["Electric", "Rock"],
     "baseStats": {
       "hp": 40,
@@ -156,7 +161,7 @@ export default [
     "id": 2,
     "name": "Ivysaur",
     "type": "Grass/Poison",
-    "image": "/assets/ivysaur.png",
+    "image": "./assets/ivysaur.png",
     "weaknesses": ["Fire", "Flying", "Ice", "Psychic"],
     "baseStats": {
       "hp": 60,
@@ -173,7 +178,7 @@ export default [
     "id": 92,
     "name": "Gastly",
     "type": "Ghost/Poison",
-    "image": "/assets/gastly.png",
+    "image": "./assets/gastly.png",
     "weaknesses": ["Ground", "Psychic", "Ghost", "Dark"],
     "baseStats": {
       "hp": 30,
