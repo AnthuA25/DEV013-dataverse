@@ -55,6 +55,7 @@ main{
     flex-wrap: wrap ;
     margin-bottom: 20px;
     
+    
 }
 
 section img{
@@ -62,6 +63,8 @@ section img{
     width: 50;
     margin-right: -60px;
     margin-bottom: -18px;
+    
+    
 
 }
 
@@ -83,8 +86,15 @@ input[type="text"]{
 
 .filters{
     display: flex;
+    justify-content: start;
     gap: 40px; 
     flex-wrap: wrap;
+    
+}
+
+label[for="type"] , label[for="name"]{
+    margin-top: 10px;
+
 }
 
 select{
@@ -111,43 +121,54 @@ button{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; 
+    
 }
 dl[itemtype="pokemons"]{
     background-color: var(--color-light-blue);
     width: 363px ;
     height: 510px;
     border-radius: 0 60px;
-   
-}
-
-dd, dt{
-    margin: 0;
     
 }
 
-dd[itemprop="ability"]{
+dt, dd{
+    margin: 0;
+    display: flex;
+   justify-content: center; 
+   
+     
+}
+
+dd[itemprop="type"]{
    
     display: flex;
-    background: linear-gradient(var(--color-purple2), var(--color-green));
+    justify-content: start;
+    /* background-color: linear-gradient(var(--color-purple2), var(--color-green)); */
     border-radius: 0 60px 0 0;
     width: 363px;
     height: 174px;
+    /* border: 1px solid white; */
 
 }
 
-dd[itemprop="ability"]>img{
+dd[itemprop="type_icon"]>img{
     width: 40px;
     height: 40px;
+    
 }
 
 dd[itemprop="image"]{
    
     margin-top: -200px;
+    
+   
 
 }
 dd[itemprop="image"]>img{
-   margin-left: -30px;
-    height: 400px;
+   margin-top: 30px;
+   margin-left: -60px;
+    height: 350px;
+    
 }
 
 dd[itemprop="image"]>img:hover{
@@ -157,11 +178,12 @@ dd[itemprop="name"]{
    
     font-size: 32px;
     text-align: center;
+    margin-top: -10px;
 
 }
 
 dt{
-    margin-left: 20px;
+    margin-left: -240px;
     margin-top: 40px ;
 }
 
@@ -169,8 +191,9 @@ dd[itemprop="weaknesses"]{
    
     display: flex;
     gap: 10px;
-    margin-top: -35px;
+    margin-top: -20px;
     margin-left: 140px;
+    
 
 }
 
@@ -180,7 +203,7 @@ dd[itemprop="weaknesses"]>img{
 
 }
 
-footer{
+footer p{
     text-align: center;
 }
 
