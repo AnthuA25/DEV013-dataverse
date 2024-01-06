@@ -18,34 +18,39 @@
     <h1>P<img src="assets/pokebola.png" alt="" />kéDex</h1>
   </header>
   <main>
-    <section>
-      <img src="assets/pokebola.png" alt="" /><input type="text" placeholder="Buscar Pokémon" />
-    </section>
-    <section class="filters">
-      <label for="type">Filtrar por tipo:</label>
-      <select name="type" id="type" data-testid="select-filter">
-        <option value="fuego">Fuego</option>
-        <option value="Agua">Agua</option>
-        <option value="Eléctrico">Eléctrico</option>
-        <option value="Lucha">Lucha</option>
-        <option value="Normal">Normal</option>
-        <option value="Planta">Planta</option>
-        <option value="Psiquico">Psiquico</option>
-        <option value="Veneno">Veneno</option>
-        <option value="Fantasma">Fantasma</option>
-      </select>
-      <label for="name">Ordenar por nombre:</label>
-      <select name="name" id="name" data-testid="select-sort">
-        <option value="default"></option>
-        <option value="asc">A-Z</option>
-        <option value="desc">Z-A</option>
-      </select>
-    </section>
-    <section>
-      <button data-testid="button-clear" type="reset">
-        Resetear Filtros
-      </button>
-    </section>
+    <form action="">
+      <section>
+        <img src="assets/pokebola.png" alt="" /><input type="text" placeholder="Buscar Pokémon" />
+      </section>
+      <section class="filters">
+        <label for="type">Filtrar por tipo:</label>
+        <select name="type" id="type" data-testid="select-filter">
+          <option value="default"></option>
+          <option value="fuego">Fuego</option>
+          <option value="Agua">Agua</option>
+          <option value="Eléctrico">Eléctrico</option>
+          <option value="Lucha">Lucha</option>
+          <option value="Normal">Normal</option>
+          <option value="Planta">Planta</option>
+          <option value="Psiquico">Psiquico</option>
+          <option value="Veneno">Veneno</option>
+          <option value="Fantasma">Fantasma</option>
+        </select>
+        <label for="name">Ordenar por nombre:</label>
+        <select name="name" id="name" data-testid="select-sort">
+          <option value="default"></option>
+          <option value="asc">A-Z</option>
+          <option value="desc">Z-A</option>
+        </select>
+      </section>
+      <section>
+        <button data-testid="button-clear" type="reset">
+          Resetear Filtros
+        </button>
+      </section>
+
+    </form>
+    
   </main>
   <section id="root">
     <!-- <dl itemtype="pokemons" >
