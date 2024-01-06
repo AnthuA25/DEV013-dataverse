@@ -6,30 +6,30 @@ export const renderItems = (data) => {
       lower = color.toLowerCase();
     }
     switch (lower) {
-      case "fire":
-        return "#C33030";
-      case "grass":
-        return "#55B870";
-      case "poison":
-        return "#7D3EA4";
-      case "water":
-        return "#5594B8";
-      case "electric":
-        return "#AAB855";
-      case "fairy":
-        return "#B85567";
-      case "ground":
-        return "#B89055";
-      case "fighting":
-        return "#DB9731";
-      case "normal":
-        return "#30A3C7";
-      case "flying":
-        return "#CBBBA3";
-      case "ghost":
-        return "#3B0B46";
-      default:
-        return "black";
+    case "fire":
+      return "#C33030";
+    case "grass":
+      return "#55B870";
+    case "poison":
+      return "#7D3EA4";
+    case "water":
+      return "#5594B8";
+    case "electric":
+      return "#AAB855";
+    case "fairy":
+      return "#B85567";
+    case "ground":
+      return "#B89055";
+    case "fighting":
+      return "#DB9731";
+    case "normal":
+      return "#30A3C7";
+    case "flying":
+      return "#CBBBA3";
+    case "ghost":
+      return "#3B0B46";
+    default:
+      return "black";
     }
   };
 
