@@ -23,11 +23,18 @@ export const renderItems = (data) => {
     case "fighting":
       return "#DB9731";
     case "normal":
-      return "#30A3C7";
-    case "flying":
       return "#CBBBA3";
+    case "flying":
+      return "#30A3C7";
     case "ghost":
       return "#3B0B46";
+    case "stone":
+      return "#80653D";
+    case "bug":
+      return "#33A021";
+    case "psychic":
+      return "#BC2D47";  
+       
     default:
       return "black";
     }
