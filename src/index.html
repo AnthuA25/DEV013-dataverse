@@ -19,44 +19,43 @@
       <h1>P<img src="assets/pokebola.png" alt="" />kéDex</h1>
     </header>
     <main>
-      <form action="">
-        <section>
-          <img src="assets/pokebola.png" alt="" /><input
-            autocomplete="off"
-            type="text"
-            placeholder="Buscar Pokémon"
-          />
-        </section>
-        <section class="filters">
-          <label for="type">Filtrar por tipo:</label>
-          <select name="type" id="type" data-testid="select-filter">
-            <option value="default"></option>
-            <option value="Fire">Fuego</option>
-            <option value="Water">Agua</option>
-            <option value="Electric">Eléctrico</option>
-            <option value="Fighting">Lucha</option>
-            <option value="Normal">Normal</option>
-            <option value="Grass">Planta</option>
-            <option value="Psychic">Psiquico</option>
-            <option value="Poison">Veneno</option>
-            <option value="Ghost">Fantasma</option>
-            <option value="Fairy">Hada</option>
-            <option value="Ground">Tierra</option>
-            <option value="Bug">Bicho</option>
-          </select>
-          <label for="name">Ordenar por nombre:</label>
-          <select name="name" id="name" data-testid="select-sort">
-            <option value="default"></option>
-            <option value="asc">A-Z</option>
-            <option value="desc">Z-A</option>
-          </select>
-        </section>
-        <section>
-          <button data-testid="button-clear" type="reset">
-            Resetear Filtros
-          </button>
-        </section>
-      </form>
+      <section>
+        <img src="assets/pokebola.png" alt="" /><input autocomplete="off"
+          type="text"
+          placeholder="Buscar Pokémon"
+        />
+      </section>
+      <section class="filters">
+        <label for="type">Filtrar por tipo:</label>
+        <select name="type" id="type" data-testid="select-filter">
+          <option value="Fire">Fuego</option>
+          <option value="Water">Agua</option>
+          <option value="Electric">Eléctrico</option>
+          <option value="Fighting">Lucha</option>
+          <option value="Normal">Normal</option>
+          <option value="Grass">Planta</option>
+          <option value="Psychic">Psiquico</option>
+          <option value="Poison">Veneno</option>
+          <option value="Ghost">Fantasma</option>
+          <option value="Fairy">Hada</option>
+          <option value="Ground">Tierra</option>
+          <option value="Bug">Bicho</option>
+          <option value="Stone">Roca</option>
+        </select>
+        <label for="name">Ordenar por nombre:</label>
+        <select name="name" id="name" data-testid="select-sort">
+          <option value="asc">A-Z</option>
+          <option value="desc">Z-A</option>
+        </select>
+      </section>
+      <section>
+        <button data-testid="button-clear" type="reset">
+          Resetear Filtros
+        </button>
+      </section>
+      <!-- <section>
+        <img src="assets/estadistica2.png" alt="Loading..." />
+      </section> -->
     </main>
     <section id="root">
       <!-- <dl itemtype="pokemons" >
