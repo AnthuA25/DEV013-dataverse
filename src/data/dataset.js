@@ -511,7 +511,7 @@ export default [
     "id": 95,
     "name": "Onix",
     "type": {
-      "type_name": ["Rock", "Ground"],
+      "type_name": ["Stone", "Ground"],
       "type_image": ["./assets/roca.png", "./assets/tierra.png"],
     },
     "image": "./assets/Onix.png",
