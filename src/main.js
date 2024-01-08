@@ -5,6 +5,7 @@ import data from "./data/dataset.js";
 const containerCard = document.querySelector("#root");
 const sortOrderSelect = document.getElementById('name');
 const filterType = document.querySelector("select[data-testid='select-filter']");
+const searchPokemons = document.querySelector("input[type='text']");
 
 
 // create copy
@@ -16,6 +17,17 @@ let currentData = originalData;
 const renderCurrentData = () => {
   containerCard.innerHTML = renderItems(currentData);
 };
+
+// boton pokemons search
+searchPokemons.addEventListener("input",() =>{
+  currentData = [];
+  const value  = searchPokemons.value;
+  const findPokemons =  data.find(data => data.name.toLowerCase() === value)
+  if(findPokemons){
+    currentData.push(findPokemons);
+    renderCurrentData(currentData);
+  }
+})
 
 // Reset button
 const resetbutton= document.querySelector("[type=\"reset\"]");
