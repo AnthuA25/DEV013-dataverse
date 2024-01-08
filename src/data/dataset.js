@@ -140,6 +140,29 @@ export default [
     "weight": 22.5,
   },
   {
+    "id": 10,
+    "name": "Caterpie",
+    "type": {
+      "type_name": ["Bug"],
+      "type_image": ["./assets/bicho.png"],
+    },
+    "image": "./assets/Caterpie.png",
+    "weaknesses": {
+      "weaknesses_name": ["Flying", "Rock", "Fire"],
+      "weaknesses_image": ["./assets/volador.png", "./assets/roca.png", "./assets/fuego.png"],
+    },
+    "baseStats": {
+      "hp": 45,
+      "attack": 30,
+      "defense": 35,
+      "speed": 45,
+    },
+    "height": 0.3,
+    "category": "Worm",
+    "ability": "Shield Dust",
+    "weight": 2.9,
+  },
+  {
     "id": 35,
     "name": "Clefairy",
     "type":{
@@ -301,6 +324,29 @@ export default [
     "weight": 54.0,
   },
   {
+    "id": 63,
+    "name": "Abra",
+    "type": {
+      "type_name": ["Psychic"],
+      "type_image": ["./assets/psiquico.png"],
+    },
+    "image": "./assets/Abra.png",
+    "weaknesses": {
+      "weaknesses_name": ["Bug", "Ghost", "Dark"],
+      "weaknesses_image": ["./assets/bicho.png", "./assets/fantasma.png", "./assets/oscuro.png"],
+    },
+    "baseStats": {
+      "hp": 25,
+      "attack": 20,
+      "defense": 15,
+      "speed": 90,
+    },
+    "height": 0.9,
+    "category": "Psi",
+    "ability": "Synchronize",
+    "weight": 19.5,
+  },
+  {
     "id": 66,
     "name": "Machop",
     "type":{
@@ -322,6 +368,29 @@ export default [
     "category": "Superpower",
     "ability": "Guts",
     "weight": 19.5,
+  },
+  {
+    "id": 79,
+    "name": "Slowpoke",
+    "type": {
+      "type_name": ["Water", "Psychic"],
+      "type_image": ["./assets/agua.png", "./assets/psiquico.png"],
+    },
+    "image": "./assets/Slowpoke.png",
+    "weaknesses": {
+      "weaknesses_name": ["Electric", "Bug", "Ghost", "Dark"],
+      "weaknesses_image": ["./assets/electrico.png", "./assets/bicho.png", "./assets/fantasma.png", "./assets/oscuro.png"],
+    },
+    "baseStats": {
+      "hp": 90,
+      "attack": 65,
+      "defense": 65,
+      "speed": 15,
+    },
+    "height": 1.2,
+    "category": "Dopey",
+    "ability": "Oblivious",
+    "weight": 36.0,
   },
   {
     "id": 16,
@@ -437,6 +506,98 @@ export default [
     "category": "Insect",
     "ability": "Compound Eyes",
     "weight": 30.0,
+  },
+  {
+    "id": 95,
+    "name": "Onix",
+    "type": {
+      "type_name": ["Rock", "Ground"],
+      "type_image": ["./assets/roca.png", "./assets/tierra.png"],
+    },
+    "image": "./assets/Onix.png",
+    "weaknesses": {
+      "weaknesses_name": ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
+      "weaknesses_image": ["./assets/agua.png", "./assets/planta.png", "./assets/hielo.png", "./assets/lucha.png", "./assets/tierra.png", "./assets/acero.png"],
+    },
+    "baseStats": {
+      "hp": 35,
+      "attack": 45,
+      "defense": 160,
+      "speed": 70,
+    },
+    "height": 8.8,
+    "category": "Rock Snake",
+    "ability": "Rock Head",
+    "weight": 210.0,
+  },
+  {
+    "id": 104,
+    "name": "Cubone",
+    "type": {
+      "type_name": ["Ground"],
+      "type_image": ["./assets/tierra.png"],
+    },
+    "image": "./assets/Cubone.png",
+    "weaknesses": {
+      "weaknesses_name": ["Water", "Grass", "Ice"],
+      "weaknesses_image": ["./assets/agua.png", "./assets/planta.png", "./assets/hielo.png"],
+    },
+    "baseStats": {
+      "hp": 50,
+      "attack": 50,
+      "defense": 95,
+      "speed": 35,
+    },
+    "height": 0.4,
+    "category": "Lonely",
+    "ability": "Rock Head",
+    "weight": 6.5,
+  },
+  {
+    "id": 113,
+    "name": "Chansey",
+    "type": {
+      "type_name": ["Normal"],
+      "type_image": ["./assets/normal.png"],
+    },
+    "image": "./assets/Chansey.png",
+    "weaknesses": {
+      "weaknesses_name": ["Fighting"],
+      "weaknesses_image": ["./assets/lucha.png"],
+    },
+    "baseStats": {
+      "hp": 250,
+      "attack": 5,
+      "defense": 5,
+      "speed": 50,
+    },
+    "height": 1.1,
+    "category": "Egg",
+    "ability": "Natural Cure",
+    "weight": 34.6,
+  },
+  {
+    "id": 123,
+    "name": "Scyther",
+    "type": {
+      "type_name": ["Bug", "Flying"],
+      "type_image": ["./assets/bicho.png", "./assets/volador.png"],
+    },
+    "image": "./assets/Scyther.png",
+    "weaknesses": {
+      "weaknesses_name": ["Electric", "Rock", "Ice"],
+      "weaknesses_image": ["./assets/electrico.png", "./assets/roca.png", "./assets/hielo.png"],
+    },
+    "baseStats": {
+      "hp": 70,
+      "attack": 110,
+      "defense": 80,
+      "speed": 105,
+    },
+    "height": 1.5,
+    "category": "Mantis",
+    "ability": "Swarm",
+    "weight": 56.0,
   },
   {
     "id": 135,
