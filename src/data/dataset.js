@@ -54,7 +54,7 @@ export default [
       "type_name": ["Fire"],
       "type_image": ["./assets/fuego.png"],
     },
-    "image": "./assets/Charmeleon.png",
+    "image": "./assets/Charmaleon.png",
     "weaknesses": {
       "weaknesses_name": ["Water", "Rock", "Ground"],
       "weaknesses_image": ["./assets/agua.png", "./assets/roca.png", "./assets/tierra.png"],
@@ -238,7 +238,7 @@ export default [
       "type_name": ["Electric"],
       "type_image": ["./assets/electrico.png"],
     },
-    "image": "./assets/Raichu.png",
+    "image": "./assets/Raichu2.png",
     "weaknesses": {
       "weaknesses_name": ["Ground"],
       "weaknesses_image": ["./assets/tierra.png"],
