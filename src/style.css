@@ -208,7 +208,7 @@ dd[itemprop="weaknesses"] {
   display: flex;
   justify-content: start;
   gap: 10px;
-  margin-left: 150px;
+  margin-left: 110px;
 }
 dd[itemprop="weaknesses"] > img {
   width: 40px;
