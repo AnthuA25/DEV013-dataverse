@@ -48,6 +48,52 @@ export default [
     "weight": 8.5,
   },
   {
+    "id": 5,
+    "name": "Charmeleon",
+    "type": {
+      "type_name": ["Fire"],
+      "type_image": ["./assets/fuego.png"],
+    },
+    "image": "./assets/Charmeleon.png",
+    "weaknesses": {
+      "weaknesses_name": ["Water", "Rock", "Ground"],
+      "weaknesses_image": ["./assets/agua.png", "./assets/roca.png", "./assets/tierra.png"],
+    },
+    "baseStats": {
+      "hp": 58,
+      "attack": 64,
+      "defense": 58,
+      "speed": 80,
+    },
+    "height": 1.1,
+    "category": "Flame",
+    "ability": "Blaze",
+    "weight": 19.0,
+  },
+  {
+    "id": 6,
+    "name": "Charizard",
+    "type": {
+      "type_name": ["Fire", "Flying"],
+      "type_image": ["./assets/fuego.png", "./assets/volador.png"],
+    },
+    "image": "./assets/Charizard.png",
+    "weaknesses": {
+      "weaknesses_name": ["Water", "Electric", "Rock"],
+      "weaknesses_image": ["./assets/agua.png", "./assets/electrico.png", "./assets/roca.png"],
+    },
+    "baseStats": {
+      "hp": 78,
+      "attack": 84,
+      "defense": 78,
+      "speed": 100,
+    },
+    "height": 1.7,
+    "category": "Flame",
+    "ability": "Blaze",
+    "weight": 90.5,
+  },
+  {
     "id": 7,
     "name": "Squirtle",
     "type":{
@@ -69,6 +115,29 @@ export default [
     "category": "Tiny Turtle",
     "ability": "Torrent",
     "weight": 9.0,
+  },
+  {
+    "id": 8,
+    "name": "Wartortle",
+    "type": {
+      "type_name": ["Water"],
+      "type_image": ["./assets/agua.png"],
+    },
+    "image": "./assets/Wartortle.png",
+    "weaknesses": {
+      "weaknesses_name": ["Electric", "Grass"],
+      "weaknesses_image": ["./assets/electrico.png", "./assets/planta.png"],
+    },
+    "baseStats": {
+      "hp": 59,
+      "attack": 63,
+      "defense": 80,
+      "speed": 58,
+    },
+    "height": 1.0,
+    "category": "Turtle",
+    "ability": "Torrent",
+    "weight": 22.5,
   },
   {
     "id": 35,
@@ -163,6 +232,75 @@ export default [
     "weight": 6.9,
   },
   {
+    "id": 26,
+    "name": "Raichu",
+    "type": {
+      "type_name": ["Electric"],
+      "type_image": ["./assets/electrico.png"],
+    },
+    "image": "./assets/Raichu.png",
+    "weaknesses": {
+      "weaknesses_name": ["Ground"],
+      "weaknesses_image": ["./assets/tierra.png"],
+    },
+    "baseStats": {
+      "hp": 60,
+      "attack": 90,
+      "defense": 55,
+      "speed": 100,
+    },
+    "height": 0.8,
+    "category": "Mouse",
+    "ability": "Static",
+    "weight": 30.0,
+  },
+  {
+    "id": 56,
+    "name": "Mankey",
+    "type": {
+      "type_name": ["Fighting"],
+      "type_image": ["./assets/lucha.png"],
+    },
+    "image": "./assets/Mankey.png",
+    "weaknesses": {
+      "weaknesses_name": ["Flying", "Psychic", "Fairy"],
+      "weaknesses_image": ["./assets/volador.png", "./assets/psiquico.png", "./assets/hada.png"],
+    },
+    "baseStats": {
+      "hp": 40,
+      "attack": 80,
+      "defense": 35,
+      "speed": 70,
+    },
+    "height": 0.5,
+    "category": "Pig Monkey",
+    "ability": "Vital Spirit",
+    "weight": 28.0,
+  },
+  {
+    "id": 62,
+    "name": "Poliwrath",
+    "type": {
+      "type_name": ["Water", "Fighting"],
+      "type_image": ["./assets/agua.png", "./assets/lucha.png"],
+    },
+    "image": "./assets/Poliwrath.png",
+    "weaknesses": {
+      "weaknesses_name": ["Electric", "Grass", "Flying", "Psychic", "Fairy"],
+      "weaknesses_image": ["./assets/electrico.png", "./assets/planta.png", "./assets/volador.png", "./assets/psiquico.png", "./assets/hada.png"],
+    },
+    "baseStats": {
+      "hp": 90,
+      "attack": 95,
+      "defense": 95,
+      "speed": 70,
+    },
+    "height": 1.3,
+    "category": "Tadpole",
+    "ability": "Water Absorb",
+    "weight": 54.0,
+  },
+  {
     "id": 66,
     "name": "Machop",
     "type":{
@@ -232,6 +370,29 @@ export default [
     "weight": 13.0,
   },
   {
+    "id": 94,
+    "name": "Gengar",
+    "type": {
+      "type_name": ["Ghost", "Poison"],
+      "type_image": ["./assets/fantasma.png", "./assets/veneno.png"],
+    },
+    "image": "./assets/Gengar.png",
+    "weaknesses": {
+      "weaknesses_name": ["Ghost", "Dark", "Ground"],
+      "weaknesses_image": ["./assets/fantasma.png", "./assets/oscuro.png", "./assets/tierra.png"],
+    },
+    "baseStats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 60,
+      "speed": 110,
+    },
+    "height": 1.5,
+    "category": "Shadow",
+    "ability": "Levitate",
+    "weight": 40.5,
+  },
+  {
     "id": 92,
     "name": "Gastly",
     "type":{
@@ -277,5 +438,73 @@ export default [
     "ability": "Compound Eyes",
     "weight": 30.0,
   },
-
+  {
+    "id": 135,
+    "name": "Jolteon",
+    "type": {
+      "type_name": ["Electric"],
+      "type_image": ["./assets/electrico.png"],
+    },
+    "image": "./assets/Jolteon.png",
+    "weaknesses": {
+      "weaknesses_name": ["Ground"],
+      "weaknesses_image": ["./assets/tierra.png"],
+    },
+    "baseStats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 60,
+      "speed": 110,
+    },
+    "height": 0.8,
+    "category": "Lightning",
+    "ability": "Volt Absorb",
+    "weight": 24.5,
+  },
+  {
+    "id": 173,
+    "name": "Cleffa",
+    "type": {
+      "type_name": ["Fairy"],
+      "type_image": ["./assets/hada.png"],
+    },
+    "image": "./assets/Cleffa.png",
+    "weaknesses": {
+      "weaknesses_name": ["Steel", "Poison"],
+      "weaknesses_image": ["./assets/acero.png", "./assets/veneno.png"],
+    },
+    "baseStats": {
+      "hp": 50,
+      "attack": 25,
+      "defense": 28,
+      "speed": 15,
+    },
+    "height": 0.3,
+    "category": "Star Shape",
+    "ability": "Cute Charm",
+    "weight": 3.0,
+  },
+  {
+    "id": 175,
+    "name": "Togepi",
+    "type": {
+      "type_name": ["Fairy"],
+      "type_image": ["./assets/hada.png"],
+    },
+    "image": "./assets/Togepi.png",
+    "weaknesses": {
+      "weaknesses_name": ["Steel", "Poison"],
+      "weaknesses_image": ["./assets/acero.png", "./assets/veneno.png"],
+    },
+    "baseStats": {
+      "hp": 35,
+      "attack": 20,
+      "defense": 65,
+      "speed": 20,
+    },
+    "height": 0.3,
+    "category": "Spike Ball",
+    "ability": "Serene Grace",
+    "weight": 1.5,
+  },
 ];
