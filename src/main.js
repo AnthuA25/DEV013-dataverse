@@ -14,7 +14,6 @@ searchPokemons.addEventListener("input",() =>{
   const newPokemons = [];
   const value  = searchPokemons.value;
   const findPokemons =  data.find(data => data.name.toLowerCase() === value)
-  // console.log(newPokemons.push(findPokemons))
   if(findPokemons){
     newPokemons.push(findPokemons);
     containerCard.innerHTML = renderItems(newPokemons);
