@@ -2,7 +2,7 @@
 
 //data=data, sortBy=name, sorOrder=asc, desc
 export const sortData = (data, sortBy, sortOrder) => {
-  const sortedData = [...data]; //create copy array
+  const sortedData = data; //create copy array
   console.log(sortedData);
 
 
