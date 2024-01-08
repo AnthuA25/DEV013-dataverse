@@ -29,7 +29,7 @@ export const renderItems = (data) => {
     case "ghost":
       return "#3B0B46";
     case "stone":
-      return "#80653D";
+      return "#61290e";
     case "bug":
       return "#33A021";
     case "psychic":

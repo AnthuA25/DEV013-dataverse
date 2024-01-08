@@ -508,29 +508,6 @@ export default [
     "weight": 30.0,
   },
   {
-    "id": 95,
-    "name": "Onix",
-    "type": {
-      "type_name": ["Rock", "Ground"],
-      "type_image": ["./assets/roca.png", "./assets/tierra.png"],
-    },
-    "image": "./assets/Onix.png",
-    "weaknesses": {
-      "weaknesses_name": ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
-      "weaknesses_image": ["./assets/agua.png", "./assets/planta.png", "./assets/hielo.png", "./assets/lucha.png", "./assets/tierra.png", "./assets/acero.png"],
-    },
-    "baseStats": {
-      "hp": 35,
-      "attack": 45,
-      "defense": 160,
-      "speed": 70,
-    },
-    "height": 8.8,
-    "category": "Rock Snake",
-    "ability": "Rock Head",
-    "weight": 210.0,
-  },
-  {
     "id": 104,
     "name": "Cubone",
     "type": {
@@ -667,5 +644,28 @@ export default [
     "category": "Spike Ball",
     "ability": "Serene Grace",
     "weight": 1.5,
+  },
+  {
+    "id": 246,
+    "name": "Larvitar",
+    "type": {
+      "type_name": ["Stone", "Ground"],
+      "type_image": ["./assets/roca.png", "./assets/tierra.png"],
+    },
+    "image": "./assets/Larvitar.png",
+    "weaknesses": {
+      "weaknesses_name": ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
+      "weaknesses_image": ["./assets/agua.png", "./assets/planta.png", "./assets/hielo.png", "./assets/lucha.png", "./assets/tierra.png", "./assets/acero.png"],
+    },
+    "baseStats": {
+      "hp": 50,
+      "attack": 64,
+      "defense": 50,
+      "speed": 41,
+    },
+    "height": 0.6,
+    "category": "Rock Skin",
+    "ability": "Guts",
+    "weight": 72.0,
   },
 ];
