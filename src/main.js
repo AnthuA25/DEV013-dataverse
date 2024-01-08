@@ -6,7 +6,18 @@ const containerCard = document.querySelector("#root");
 const sortOrderSelect = document.getElementById('name');
 const filterType = document.querySelector("select[data-testid='select-filter']");
 const searchPokemons = document.querySelector("input[type='text']");
+const modal = document.getElementById("myBtn");
+const modalContent = document.querySelector('.modal-content');
+const close = document.querySelector('.fa-xmark');
 
+
+// Modal
+modal.addEventListener("click",() =>{
+  modalContent.classList.add("modal-active")
+})
+close.addEventListener("click",() => {
+  modalContent.classList.add("modal-close")
+})
 
 // create copy
 const originalData = data;
