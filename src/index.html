@@ -8,9 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;600&family=Jomhuria&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;600&family=Jomhuria&display=swap"
+    rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/86bd3094a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
 
   <body>
@@ -55,11 +57,16 @@
             Resetear Filtros
           </button>
         </section>
-        <!-- <section>
-        <img src="assets/estadistica2.png" alt="Loading..." />
-      </section> -->
+        <section id="myBtn" class="modal">
+          <i class="fa-solid fa-chart-simple"></i>
+        </section>
       </form>
     </main>
+    <section class="modal-content">
+      <i class="fa-solid fa-xmark"></i>
+      <h2>Estadisticas</h2>
+      <canvas id="myChart"></canvas>
+    </section>
     <section id="root">
       <!-- <dl itemtype="pokemons" >
         <dd itemprop="ability">

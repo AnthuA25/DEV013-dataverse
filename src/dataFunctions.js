@@ -29,3 +29,8 @@ export const filterData = (data, filterBy, value) => {
   return result;
 
 };
+
+export const pokemonsAverage  = (data,value) => {
+  const result = data.filter(type => type.type.type_name.includes(value)).length;
+  return result;
+};

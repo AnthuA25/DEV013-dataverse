@@ -1,12 +1,26 @@
-import { filterData, sortData } from './dataFunctions.js';
+import { filterData, pokemonsAverage, sortData} from './dataFunctions.js';
 import { renderItems } from './view.js';
+
 import data from "./data/dataset.js";
+// import Chart from 'chart.js/auto';
 
 const containerCard = document.querySelector("#root");
 const sortOrderSelect = document.getElementById('name');
 const filterType = document.querySelector("select[data-testid='select-filter']");
 const searchPokemons = document.querySelector("input[type='text']");
+const modal = document.getElementById("myBtn");
+const modalContent = document.querySelector('.modal-content');
+const close = document.querySelector('.fa-xmark');
+const stadistic = document.getElementById('myChart');
 
+
+// Modal
+modal.addEventListener("click",() =>{
+  modalContent.classList.toggle("modal-active");
+});
+close.addEventListener("click",() => {
+  modalContent.classList.toggle("modal-active");
+});
 
 // create copy
 const originalData = data;
@@ -50,6 +64,46 @@ filterType.addEventListener("change", () => {
   renderCurrentData();
 });
 
+// 
+const nameTypes = ()=>{
+  const namesPokemons=[];
+  for(let i=0;i<originalData.length;í++){
+    namesPokemons= originalData.filter(type=>type.type.type_name[i]);
+console.log(namesPokemons);
+  }
+}
+
+// 
+// const numberPokemons = () => {
+
+//   const nroPokemons = [];
+//   for(let i=0; i < originalData.length; i++){
+
+//   }
+// }
+
 
 renderCurrentData();
 
+new Chart(stadistic, {
+  type: 'bar',
+  data: {
+    labels: ['Electrico', 'Fuego', 'Volador', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+      label: '# of Votes',
+      data: [],
+      borderWidth: 1,
+      backgroundColor: '#9BD0F5',
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+
+// console.log(pokemonsAverage(originalData))

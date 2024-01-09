@@ -507,7 +507,9 @@ export default [
     "ability": "Compound Eyes",
     "weight": 30.0,
   },
+
   {
+
     "id": 104,
     "name": "Cubone",
     "type": {
