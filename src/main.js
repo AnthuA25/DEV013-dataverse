@@ -57,7 +57,8 @@ const renderCurrentData = () => {
 // Resetear al estado original
 const resetbutton= document.querySelector("[type=\"reset\"]");
 resetbutton.addEventListener('click',()=>{
-  containerCard.innerHTML = renderItems(data);
+  currentData = originalData;
+  containerCard.innerHTML = renderItems(currentData);
 });
 
 // alfabetic order
