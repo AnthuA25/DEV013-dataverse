@@ -77,6 +77,7 @@ filterType.addEventListener("change", () => {
 
 let names = [];
 const nroPokemons = [];
+// eslint-disable-next-line no-undef
 const uniqueType = new Set();
 for (let i = 0; i < originalData.length; i++) {
   const types = originalData[i].type.typeName;
@@ -94,13 +95,13 @@ names = Array.from(uniqueType);
 let sametypes = 0;
 for (let i = 0; i < names.length; i++) {
   sametypes = data.filter(type => type.type.typeName.includes(names[i])).length;
-  console.log(sametypes);
-
+  // console.log(sametypes);
   nroPokemons.push(sametypes);
 }
-console.log(nroPokemons);
+// console.log(nroPokemons);
 
 
+// eslint-disable-next-line no-undef
 new Chart(stadistic, {
   type: 'bar',
   data: {
