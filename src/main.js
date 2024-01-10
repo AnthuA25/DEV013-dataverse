@@ -51,10 +51,13 @@ searchPokemons.addEventListener("input", () => {
   }
 })
 
-// Reset button
-const resetbutton = document.querySelector("[type=\"reset\"]");
-resetbutton.addEventListener('click', () => {
-  containerCard.innerHTML = renderItems(data);
+
+// Resetear al estado original
+const resetbutton= document.querySelector("[type=\"reset\"]");
+resetbutton.addEventListener('click',()=>{
+  currentData = originalData;
+  containerCard.innerHTML = renderItems(currentData);
+
 });
 
 // alfabetic order
