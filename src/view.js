@@ -45,7 +45,7 @@ export const renderItems = (data) => {
     let weaknesses = "";
 
     // Agrega colores dependiendo del tipo que tenga cada pokemon
-    const types = pokemon.type.type_name;
+    const types = pokemon.type.typeName;
     let background;
     let style;
 
@@ -61,14 +61,14 @@ export const renderItems = (data) => {
     // --
 
     // Agrega imagenes del tipo de cada pokemón
-    for (let i = 0; i < pokemon.type.type_image.length; i++) {
-      type += `<img src=${pokemon.type.type_image[i]} alt=${pokemon.name}/>`;
+    for (let i = 0; i < pokemon.type.typeImage.length; i++) {
+      type += `<img src=${pokemon.type.typeImage[i]} alt=${pokemon.name}/>`;
     }
     // --
 
     // Agrega imagenes de las debilidades de cada pokemón
-    for (let i = 0; i < pokemon.weaknesses.weaknesses_image.length; i++) {
-      weaknesses += `<img src=${pokemon.weaknesses.weaknesses_image[i]} alt=${pokemon.name}/>`;
+    for (let i = 0; i < pokemon.weaknesses.weaknessesImage.length; i++) {
+      weaknesses += `<img src=${pokemon.weaknesses.weaknessesImage[i]} alt=${pokemon.name}/>`;
     }
     // --
 

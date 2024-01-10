@@ -70,7 +70,7 @@ sortOrderSelect.addEventListener('change', () => {
 // Filter Type
 filterType.addEventListener("change", () => {
   const selectedFilter = filterType.value;
-  currentData = filterData(originalData, 'type_name', selectedFilter);
+  currentData = filterData(originalData, 'typeName', selectedFilter);
   currentData = sortData(currentData, 'name', sortOrderSelect.value);
   renderCurrentData();
 });
@@ -79,7 +79,7 @@ let names = [];
 const nroPokemons = [];
 const uniqueType = new Set();
 for (let i = 0; i < originalData.length; i++) {
-  const types = originalData[i].type.type_name;
+  const types = originalData[i].type.typeName;
   //console.log("pokk"+types);
   for (let j = 0; j < types.length; j++) {
     uniqueType.add(types[j]);
@@ -93,7 +93,7 @@ names = Array.from(uniqueType);
 
 let sametypes = 0;
 for (let i = 0; i < names.length; i++) {
-  sametypes = data.filter(type => type.type.type_name.includes(names[i])).length;
+  sametypes = data.filter(type => type.type.typeName.includes(names[i])).length;
   console.log(sametypes);
 
   nroPokemons.push(sametypes);

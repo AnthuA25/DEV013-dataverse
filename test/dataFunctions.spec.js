@@ -2,15 +2,16 @@ import { example, anotherExample } from '../src/dataFunctions.js';
 import { data as fakeData } from './data.js';
 
 console.log(fakeData);
+ const TEST_SORT = ;
 
-describe('example', () => {
+describe('sortData', () => {
 
-  it('returns `example`', () => {
+  it('should return  `example`', () => {
     expect(example()).toBe('example');
   });
 });
 
-describe('anotherExample', () => {
+describe('filterData', () => {
 
   it('returns `anotherExample`', () => {
     expect(anotherExample()).toBe('OMG');
