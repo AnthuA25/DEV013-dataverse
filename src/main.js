@@ -5,7 +5,6 @@ import {
 import {
   renderItems
 } from './view.js';
-
 import data from "./data/dataset.js";
 //import Chart from 'chart.js/auto';
 
@@ -124,8 +123,6 @@ new Chart(stadistic, {
 });
 
 renderCurrentData();
-
-
 
 
 // console.log(pokemonsAverage(originalData))
