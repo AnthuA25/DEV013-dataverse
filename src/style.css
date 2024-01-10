@@ -203,12 +203,12 @@ dd[itemprop="name"] {
 
 dt {
   font-weight: bold;
-  margin-left: -240px;
+  margin-left: -220px;
   margin-top: 30px;
 }
 dd[itemprop="weaknesses"] {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 10px;
   margin-left: 50px;
   margin-top: 10px;
@@ -255,6 +255,20 @@ footer p {
 }
 .modal-close{
   display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.769); 
+  display: none; 
+}
+
+.overlay-active {
+  display: block; 
 }
 
 

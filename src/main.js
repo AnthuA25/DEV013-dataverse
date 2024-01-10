@@ -1,8 +1,12 @@
-import { filterData, pokemonsAverage, sortData} from './dataFunctions.js';
-import { renderItems } from './view.js';
-
+import {
+  filterData,
+  sortData
+} from './dataFunctions.js';
+import {
+  renderItems
+} from './view.js';
 import data from "./data/dataset.js";
-// import Chart from 'chart.js/auto';
+//import Chart from 'chart.js/auto';
 
 const containerCard = document.querySelector("#root");
 const sortOrderSelect = document.getElementById('name');
@@ -12,14 +16,18 @@ const modal = document.getElementById("myBtn");
 const modalContent = document.querySelector('.modal-content');
 const close = document.querySelector('.fa-xmark');
 const stadistic = document.getElementById('myChart');
+//overlay
+const overlay = document.querySelector('.overlay');
 
 
 // Modal
-modal.addEventListener("click",() =>{
+modal.addEventListener("click", () => {
   modalContent.classList.toggle("modal-active");
+  overlay.classList.toggle("overlay-active");
 });
-close.addEventListener("click",() => {
+close.addEventListener("click", () => {
   modalContent.classList.toggle("modal-active");
+  overlay.classList.toggle("overlay-active");
 });
 
 // create copy
@@ -33,19 +41,19 @@ const renderCurrentData = () => {
 };
 
 // boton pokemons search
-searchPokemons.addEventListener("input",() =>{
+searchPokemons.addEventListener("input", () => {
   currentData = [];
-  const value  = searchPokemons.value;
-  const findPokemons =  data.find(data => data.name.toLowerCase() === value)
-  if(findPokemons){
+  const value = searchPokemons.value;
+  const findPokemons = data.find(data => data.name.toLowerCase() === value)
+  if (findPokemons) {
     currentData.push(findPokemons);
     renderCurrentData(currentData);
   }
 })
 
 // Reset button
-const resetbutton= document.querySelector("[type=\"reset\"]");
-resetbutton.addEventListener('click',()=>{
+const resetbutton = document.querySelector("[type=\"reset\"]");
+resetbutton.addEventListener('click', () => {
   containerCard.innerHTML = renderItems(data);
 });
 
@@ -64,36 +72,45 @@ filterType.addEventListener("change", () => {
   renderCurrentData();
 });
 
-// 
-const nameTypes = ()=>{
-  const namesPokemons=[];
-  for(let i=0;i<originalData.length;í++){
-    namesPokemons= originalData.filter(type=>type.type.type_name[i]);
-console.log(namesPokemons);
+let names = [];
+const nroPokemons = [];
+const uniqueType = new Set();
+for (let i = 0; i < originalData.length; i++) {
+  const types = originalData[i].type.type_name;
+  //console.log("pokk"+types);
+  for (let j = 0; j < types.length; j++) {
+    uniqueType.add(types[j]);
+    //console.log("uniq"+uniqueType);
+
   }
+
 }
 
-// 
-// const numberPokemons = () => {
+names = Array.from(uniqueType);
 
-//   const nroPokemons = [];
-//   for(let i=0; i < originalData.length; i++){
+let sametypes = 0;
+for (let i = 0; i < names.length; i++) {
+  sametypes = data.filter(type => type.type.type_name.includes(names[i])).length;
+  console.log(sametypes);
 
-//   }
-// }
+  nroPokemons.push(sametypes);
+}
+console.log(nroPokemons);
 
-
-renderCurrentData();
 
 new Chart(stadistic, {
   type: 'bar',
   data: {
-    labels: ['Electrico', 'Fuego', 'Volador', 'Green', 'Purple', 'Orange'],
+    labels: names,
     datasets: [{
       label: '# of Votes',
-      data: [],
+      data: nroPokemons,
       borderWidth: 1,
       backgroundColor: '#9BD0F5',
+      font: {
+        size: 14,
+        weight: 'bolder',
+      }
     }]
   },
   options: {
@@ -104,6 +121,8 @@ new Chart(stadistic, {
     }
   }
 });
+
+renderCurrentData();
 
 
 // console.log(pokemonsAverage(originalData))
