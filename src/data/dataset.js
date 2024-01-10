@@ -3,15 +3,15 @@ export default [
     "id": 1,
     "name": "Bulbasaur",
     "type":{
-        "type_name": ["Grass","Poison"],
-        "type_image": ["./assets/planta.png","./assets/veneno.png"],
+        "typeName": ["Grass","Poison"],
+        "typeImage": ["./assets/planta.png","./assets/veneno.png"],
     },
     "image": "./assets/Bulbasaur..png",
     "weaknesses":{
-      "weaknesses_name": [
+      "weaknessesName": [
         "Fire", "Flying", "Ice", "Psychic"
       ],
-      "weaknesses_image":["./assets/fuego.png","./assets/volador.png","./assets/hielo.png","./assets/psiquico.png"],
+      "weaknessesImage":["./assets/fuego.png","./assets/volador.png","./assets/hielo.png","./assets/psiquico.png"],
     },
     "baseStats": {
       "hp": 45,
@@ -28,13 +28,13 @@ export default [
     "id": 4,
     "name": "Charmander",
     "type":{
-      "type_name": ["Fire"],
-      "type_image":["./assets/fuego.png"],
+      "typeName": ["Fire"],
+      "typeImage":["./assets/fuego.png"],
     },
     "image": "./assets/Charmander.png",
     "weaknesses":{
-      "weaknesses_name": ["Water", "Rock", "Ground"],
-      "weaknesses_image":["./assets/agua.png","./assets/roca.png","./assets/tierra.png"],
+      "weaknessesName": ["Water", "Rock", "Ground"],
+      "weaknessesImage":["./assets/agua.png","./assets/roca.png","./assets/tierra.png"],
     },
     "baseStats": {
       "hp": 39,
@@ -51,13 +51,13 @@ export default [
     "id": 5,
     "name": "Charmeleon",
     "type": {
-      "type_name": ["Fire"],
-      "type_image": ["./assets/fuego.png"],
+      "typeName": ["Fire"],
+      "typeImage": ["./assets/fuego.png"],
     },
     "image": "./assets/Charmaleon.png",
     "weaknesses": {
-      "weaknesses_name": ["Water", "Rock", "Ground"],
-      "weaknesses_image": ["./assets/agua.png", "./assets/roca.png", "./assets/tierra.png"],
+      "weaknessesName": ["Water", "Rock", "Ground"],
+      "weaknessesImage": ["./assets/agua.png", "./assets/roca.png", "./assets/tierra.png"],
     },
     "baseStats": {
       "hp": 58,
@@ -74,13 +74,13 @@ export default [
     "id": 6,
     "name": "Charizard",
     "type": {
-      "type_name": ["Fire", "Flying"],
-      "type_image": ["./assets/fuego.png", "./assets/volador.png"],
+      "typeName": ["Fire", "Flying"],
+      "typeImage": ["./assets/fuego.png", "./assets/volador.png"],
     },
     "image": "./assets/Charizard.png",
     "weaknesses": {
-      "weaknesses_name": ["Water", "Electric", "Rock"],
-      "weaknesses_image": ["./assets/agua.png", "./assets/electrico.png", "./assets/roca.png"],
+      "weaknessesName": ["Water", "Electric", "Rock"],
+      "weaknessesImage": ["./assets/agua.png", "./assets/electrico.png", "./assets/roca.png"],
     },
     "baseStats": {
       "hp": 78,
@@ -97,13 +97,13 @@ export default [
     "id": 7,
     "name": "Squirtle",
     "type":{
-      "type_name": ["Water"],
-      "type_image": ["./assets/agua.png"],
+      "typeName": ["Water"],
+      "typeImage": ["./assets/agua.png"],
     },
     "image": "./assets/Squirtle_2.png",
     "weaknesses":{
-      "weaknesses_name": ["Electric", "Grass"],
-      "weaknesses_image":["./assets/electrico.png","./assets/planta.png"],
+      "weaknessesName": ["Electric", "Grass"],
+      "weaknessesImage":["./assets/electrico.png","./assets/planta.png"],
     },
     "baseStats": {
       "hp": 44,
@@ -120,13 +120,13 @@ export default [
     "id": 8,
     "name": "Wartortle",
     "type": {
-      "type_name": ["Water"],
-      "type_image": ["./assets/agua.png"],
+      "typeName": ["Water"],
+      "typeImage": ["./assets/agua.png"],
     },
     "image": "./assets/Wartortle.png",
     "weaknesses": {
-      "weaknesses_name": ["Electric", "Grass"],
-      "weaknesses_image": ["./assets/electrico.png", "./assets/planta.png"],
+      "weaknessesName": ["Electric", "Grass"],
+      "weaknessesImage": ["./assets/electrico.png", "./assets/planta.png"],
     },
     "baseStats": {
       "hp": 59,
@@ -143,13 +143,13 @@ export default [
     "id": 10,
     "name": "Caterpie",
     "type": {
-      "type_name": ["Bug"],
-      "type_image": ["./assets/bicho.png"],
+      "typeName": ["Bug"],
+      "typeImage": ["./assets/bicho.png"],
     },
     "image": "./assets/Caterpie.png",
     "weaknesses": {
-      "weaknesses_name": ["Flying", "Rock", "Fire"],
-      "weaknesses_image": ["./assets/volador.png", "./assets/roca.png", "./assets/fuego.png"],
+      "weaknessesName": ["Flying", "Rock", "Fire"],
+      "weaknessesImage": ["./assets/volador.png", "./assets/roca.png", "./assets/fuego.png"],
     },
     "baseStats": {
       "hp": 45,
@@ -166,13 +166,13 @@ export default [
     "id": 35,
     "name": "Clefairy",
     "type":{
-      "type_name": ["Fairy"],
-      "type_image":["./assets/hada.png"],
+      "typeName": ["Fairy"],
+      "typeImage":["./assets/hada.png"],
     },
     "image": "./assets/Clefairy2.png",
     "weaknesses":{
-      "weaknesses_name": ["Steel", "Poison"],
-      "weaknesses_image":["./assets/acero.png","./assets/veneno.png"],
+      "weaknessesName": ["Steel", "Poison"],
+      "weaknessesImage":["./assets/acero.png","./assets/veneno.png"],
     },
     "baseStats": {
       "hp": 70,
@@ -189,13 +189,13 @@ export default [
     "id": 25,
     "name": "Pikachu",
     "type":{
-      "type_name": ["Electric"],
-      "type_image":["./assets/electrico.png"],
+      "typeName": ["Electric"],
+      "typeImage":["./assets/electrico.png"],
     },
     "image": "./assets/Pikachu2.png",
     "weaknesses":{
-      "weaknesses_name": ["Ground"],
-      "weaknesses_image":["./assets/tierra.png"],
+      "weaknessesName": ["Ground"],
+      "weaknessesImage":["./assets/tierra.png"],
     },
     "baseStats": {
       "hp": 35,
@@ -212,13 +212,13 @@ export default [
     "id": 50,
     "name": "Diglett",
     "type":{
-      "type_name": ["Ground"],
-      "type_image":["./assets/tierra.png"],
+      "typeName": ["Ground"],
+      "typeImage":["./assets/tierra.png"],
     },
     "image": "./assets/Diglett.png",
     "weaknesses":{
-      "weaknesses_name": ["Water", "Grass", "Ice"],
-      "weaknesses_image":["./assets/agua.png","./assets/planta.png","./assets/hielo.png"],
+      "weaknessesName": ["Water", "Grass", "Ice"],
+      "weaknessesImage":["./assets/agua.png","./assets/planta.png","./assets/hielo.png"],
     },
     "baseStats": {
       "hp": 10,
@@ -235,13 +235,13 @@ export default [
     "id": 23,
     "name": "Ekans",
     "type":{
-      "type_name": ["Poison"],
-      "type_image":["./assets/veneno.png"],
+      "typeName": ["Poison"],
+      "typeImage":["./assets/veneno.png"],
     },
     "image": "./assets/Ekans.png",
     "weaknesses":{
-      "weaknesses_name": ["Ground", "Psychic"],
-      "weaknesses_image":["./assets/tierra.png","./assets/psiquico.png"],
+      "weaknessesName": ["Ground", "Psychic"],
+      "weaknessesImage":["./assets/tierra.png","./assets/psiquico.png"],
     },
     "baseStats": {
       "hp": 35,
@@ -258,13 +258,13 @@ export default [
     "id": 26,
     "name": "Raichu",
     "type": {
-      "type_name": ["Electric"],
-      "type_image": ["./assets/electrico.png"],
+      "typeName": ["Electric"],
+      "typeImage": ["./assets/electrico.png"],
     },
     "image": "./assets/Raichu2.png",
     "weaknesses": {
-      "weaknesses_name": ["Ground"],
-      "weaknesses_image": ["./assets/tierra.png"],
+      "weaknessesName": ["Ground"],
+      "weaknessesImage": ["./assets/tierra.png"],
     },
     "baseStats": {
       "hp": 60,
@@ -281,13 +281,13 @@ export default [
     "id": 56,
     "name": "Mankey",
     "type": {
-      "type_name": ["Fighting"],
-      "type_image": ["./assets/lucha.png"],
+      "typeName": ["Fighting"],
+      "typeImage": ["./assets/lucha.png"],
     },
     "image": "./assets/Mankey.png",
     "weaknesses": {
-      "weaknesses_name": ["Flying", "Psychic", "Fairy"],
-      "weaknesses_image": ["./assets/volador.png", "./assets/psiquico.png", "./assets/hada.png"],
+      "weaknessesName": ["Flying", "Psychic", "Fairy"],
+      "weaknessesImage": ["./assets/volador.png", "./assets/psiquico.png", "./assets/hada.png"],
     },
     "baseStats": {
       "hp": 40,
@@ -304,13 +304,13 @@ export default [
     "id": 62,
     "name": "Poliwrath",
     "type": {
-      "type_name": ["Water", "Fighting"],
-      "type_image": ["./assets/agua.png", "./assets/lucha.png"],
+      "typeName": ["Water", "Fighting"],
+      "typeImage": ["./assets/agua.png", "./assets/lucha.png"],
     },
     "image": "./assets/Poliwrath.png",
     "weaknesses": {
-      "weaknesses_name": ["Electric", "Grass", "Flying", "Psychic", "Fairy"],
-      "weaknesses_image": ["./assets/electrico.png", "./assets/planta.png", "./assets/volador.png", "./assets/psiquico.png", "./assets/hada.png"],
+      "weaknessesName": ["Electric", "Grass", "Flying", "Psychic", "Fairy"],
+      "weaknessesImage": ["./assets/electrico.png", "./assets/planta.png", "./assets/volador.png", "./assets/psiquico.png", "./assets/hada.png"],
     },
     "baseStats": {
       "hp": 90,
@@ -327,13 +327,13 @@ export default [
     "id": 63,
     "name": "Abra",
     "type": {
-      "type_name": ["Psychic"],
-      "type_image": ["./assets/psiquico.png"],
+      "typeName": ["Psychic"],
+      "typeImage": ["./assets/psiquico.png"],
     },
     "image": "./assets/Abra.png",
     "weaknesses": {
-      "weaknesses_name": ["Bug", "Ghost", "Dark"],
-      "weaknesses_image": ["./assets/bicho.png", "./assets/fantasma.png", "./assets/oscuro.png"],
+      "weaknessesName": ["Bug", "Ghost", "Dark"],
+      "weaknessesImage": ["./assets/bicho.png", "./assets/fantasma.png", "./assets/oscuro.png"],
     },
     "baseStats": {
       "hp": 25,
@@ -350,13 +350,13 @@ export default [
     "id": 66,
     "name": "Machop",
     "type":{
-      "type_name": ["Fighting"],
-      "type_image":["./assets/lucha.png"],
+      "typeName": ["Fighting"],
+      "typeImage":["./assets/lucha.png"],
     },
     "image": "./assets/Machop.png",
     "weaknesses":{
-      "weaknesses_name": ["Flying", "Psychic", "Fairy"],
-      "weaknesses_image":["./assets/volador.png","./assets/psiquico.png","./assets/hada.png"],
+      "weaknessesName": ["Flying", "Psychic", "Fairy"],
+      "weaknessesImage":["./assets/volador.png","./assets/psiquico.png","./assets/hada.png"],
     },
     "baseStats": {
       "hp": 70,
@@ -373,13 +373,13 @@ export default [
     "id": 79,
     "name": "Slowpoke",
     "type": {
-      "type_name": ["Water", "Psychic"],
-      "type_image": ["./assets/agua.png", "./assets/psiquico.png"],
+      "typeName": ["Water", "Psychic"],
+      "typeImage": ["./assets/agua.png", "./assets/psiquico.png"],
     },
     "image": "./assets/Slowpoke.png",
     "weaknesses": {
-      "weaknesses_name": ["Electric", "Bug", "Ghost", "Dark"],
-      "weaknesses_image": ["./assets/electrico.png", "./assets/bicho.png", "./assets/fantasma.png", "./assets/oscuro.png"],
+      "weaknessesName": ["Electric", "Bug", "Ghost", "Dark"],
+      "weaknessesImage": ["./assets/electrico.png", "./assets/bicho.png", "./assets/fantasma.png", "./assets/oscuro.png"],
     },
     "baseStats": {
       "hp": 90,
@@ -396,13 +396,13 @@ export default [
     "id": 16,
     "name": "Pidgey",
     "type":{
-      "type_name": ["Normal","Flying"],
-      "type_image":["./assets/volador.png","./assets/normal.png"],
+      "typeName": ["Normal","Flying"],
+      "typeImage":["./assets/volador.png","./assets/normal.png"],
     },
     "image": "./assets/Pidgey.png",
     "weaknesses":{
-      "weaknesses_name": ["Electric", "Rock"],
-      "weaknesses_image":["./assets/electrico.png","./assets/roca.png"],
+      "weaknessesName": ["Electric", "Rock"],
+      "weaknessesImage":["./assets/electrico.png","./assets/roca.png"],
     },
     "baseStats": {
       "hp": 40,
@@ -419,13 +419,13 @@ export default [
     "id": 2,
     "name": "Ivysaur",
     "type":{
-      "type_name": ["Grass","Poison"],
-      "type_image":["./assets/planta.png","./assets/veneno.png"],
+      "typeName": ["Grass","Poison"],
+      "typeImage":["./assets/planta.png","./assets/veneno.png"],
     },
     "image": "./assets/Ivysaur.png",
     "weaknesses":{
-      "weaknesses_name": ["Fire", "Flying", "Ice", "Psychic"],
-      "weaknesses_image":["./assets/fuego.png","./assets/volador.png","./assets/hielo.png","./assets/psiquico.png"],
+      "weaknessesName": ["Fire", "Flying", "Ice", "Psychic"],
+      "weaknessesImage":["./assets/fuego.png","./assets/volador.png","./assets/hielo.png","./assets/psiquico.png"],
     },
     "baseStats": {
       "hp": 60,
@@ -442,13 +442,13 @@ export default [
     "id": 94,
     "name": "Gengar",
     "type": {
-      "type_name": ["Ghost", "Poison"],
-      "type_image": ["./assets/fantasma.png", "./assets/veneno.png"],
+      "typeName": ["Ghost", "Poison"],
+      "typeImage": ["./assets/fantasma.png", "./assets/veneno.png"],
     },
     "image": "./assets/Gengar.png",
     "weaknesses": {
-      "weaknesses_name": ["Ghost", "Dark", "Ground"],
-      "weaknesses_image": ["./assets/fantasma.png", "./assets/oscuro.png", "./assets/tierra.png"],
+      "weaknessesName": ["Ghost", "Dark", "Ground"],
+      "weaknessesImage": ["./assets/fantasma.png", "./assets/oscuro.png", "./assets/tierra.png"],
     },
     "baseStats": {
       "hp": 60,
@@ -465,13 +465,13 @@ export default [
     "id": 92,
     "name": "Gastly",
     "type":{
-      "type_name": ["Ghost","Poison"],
-      "type_image":["./assets/fantasma.png","./assets/veneno.png"],
+      "typeName": ["Ghost","Poison"],
+      "typeImage":["./assets/fantasma.png","./assets/veneno.png"],
     },
     "image": "./assets/Gastly.png",
     "weaknesses":{
-      "weaknesses_name": ["Ground", "Psychic", "Ghost", "Dark"],
-      "weaknesses_image":["./assets/tierra.png","./assets/psiquico.png","./assets/fantasma.png","./assets/oscuro.png"],
+      "weaknessesName": ["Ground", "Psychic", "Ghost", "Dark"],
+      "weaknessesImage":["./assets/tierra.png","./assets/psiquico.png","./assets/fantasma.png","./assets/oscuro.png"],
     },
     "baseStats": {
       "hp": 30,
@@ -488,13 +488,13 @@ export default [
     "id": 48,
     "name": "Venonat",
     "type":{
-      "type_name": ["Bug","Poison"],
-      "type_image":["./assets/bicho.png","./assets/veneno.png"],
+      "typeName": ["Bug","Poison"],
+      "typeImage":["./assets/bicho.png","./assets/veneno.png"],
     },
     "image": "./assets/Venonat.png",
     "weaknesses":{
-      "weaknesses_name": ["Flying", "Rock", "Fire", "Psychic"],
-      "weaknesses_image":["./assets/volador.png","./assets/roca.png","./assets/fuego.png","./assets/psiquico.png"],
+      "weaknessesName": ["Flying", "Rock", "Fire", "Psychic"],
+      "weaknessesImage":["./assets/volador.png","./assets/roca.png","./assets/fuego.png","./assets/psiquico.png"],
     },
     "baseStats": {
       "hp": 60,
@@ -511,13 +511,13 @@ export default [
     "id": 104,
     "name": "Cubone",
     "type": {
-      "type_name": ["Ground"],
-      "type_image": ["./assets/tierra.png"],
+      "typeName": ["Ground"],
+      "typeImage": ["./assets/tierra.png"],
     },
     "image": "./assets/Cubone.png",
     "weaknesses": {
-      "weaknesses_name": ["Water", "Grass", "Ice"],
-      "weaknesses_image": ["./assets/agua.png", "./assets/planta.png", "./assets/hielo.png"],
+      "weaknessesName": ["Water", "Grass", "Ice"],
+      "weaknessesImage": ["./assets/agua.png", "./assets/planta.png", "./assets/hielo.png"],
     },
     "baseStats": {
       "hp": 50,
@@ -534,13 +534,13 @@ export default [
     "id": 113,
     "name": "Chansey",
     "type": {
-      "type_name": ["Normal"],
-      "type_image": ["./assets/normal.png"],
+      "typeName": ["Normal"],
+      "typeImage": ["./assets/normal.png"],
     },
     "image": "./assets/Chansey.png",
     "weaknesses": {
-      "weaknesses_name": ["Fighting"],
-      "weaknesses_image": ["./assets/lucha.png"],
+      "weaknessesName": ["Fighting"],
+      "weaknessesImage": ["./assets/lucha.png"],
     },
     "baseStats": {
       "hp": 250,
@@ -557,13 +557,13 @@ export default [
     "id": 123,
     "name": "Scyther",
     "type": {
-      "type_name": ["Bug", "Flying"],
-      "type_image": ["./assets/bicho.png", "./assets/volador.png"],
+      "typeName": ["Bug", "Flying"],
+      "typeImage": ["./assets/bicho.png", "./assets/volador.png"],
     },
     "image": "./assets/Scyther.png",
     "weaknesses": {
-      "weaknesses_name": ["Electric", "Rock", "Ice"],
-      "weaknesses_image": ["./assets/electrico.png", "./assets/roca.png", "./assets/hielo.png"],
+      "weaknessesName": ["Electric", "Rock", "Ice"],
+      "weaknessesImage": ["./assets/electrico.png", "./assets/roca.png", "./assets/hielo.png"],
     },
     "baseStats": {
       "hp": 70,
@@ -580,13 +580,13 @@ export default [
     "id": 135,
     "name": "Jolteon",
     "type": {
-      "type_name": ["Electric"],
-      "type_image": ["./assets/electrico.png"],
+      "typeName": ["Electric"],
+      "typeImage": ["./assets/electrico.png"],
     },
     "image": "./assets/Jolteon.png",
     "weaknesses": {
-      "weaknesses_name": ["Ground"],
-      "weaknesses_image": ["./assets/tierra.png"],
+      "weaknessesName": ["Ground"],
+      "weaknessesImage": ["./assets/tierra.png"],
     },
     "baseStats": {
       "hp": 65,
@@ -603,13 +603,13 @@ export default [
     "id": 173,
     "name": "Cleffa",
     "type": {
-      "type_name": ["Fairy"],
-      "type_image": ["./assets/hada.png"],
+      "typeName": ["Fairy"],
+      "typeImage": ["./assets/hada.png"],
     },
     "image": "./assets/Cleffa.png",
     "weaknesses": {
-      "weaknesses_name": ["Steel", "Poison"],
-      "weaknesses_image": ["./assets/acero.png", "./assets/veneno.png"],
+      "weaknessesName": ["Steel", "Poison"],
+      "weaknessesImage": ["./assets/acero.png", "./assets/veneno.png"],
     },
     "baseStats": {
       "hp": 50,
@@ -626,13 +626,13 @@ export default [
     "id": 175,
     "name": "Togepi",
     "type": {
-      "type_name": ["Fairy"],
-      "type_image": ["./assets/hada.png"],
+      "typeName": ["Fairy"],
+      "typeImage": ["./assets/hada.png"],
     },
     "image": "./assets/Togepi.png",
     "weaknesses": {
-      "weaknesses_name": ["Steel", "Poison"],
-      "weaknesses_image": ["./assets/acero.png", "./assets/veneno.png"],
+      "weaknessesName": ["Steel", "Poison"],
+      "weaknessesImage": ["./assets/acero.png", "./assets/veneno.png"],
     },
     "baseStats": {
       "hp": 35,
@@ -649,13 +649,13 @@ export default [
     "id": 246,
     "name": "Larvitar",
     "type": {
-      "type_name": ["Stone", "Ground"],
-      "type_image": ["./assets/roca.png", "./assets/tierra.png"],
+      "typeName": ["Stone", "Ground"],
+      "typeImage": ["./assets/roca.png", "./assets/tierra.png"],
     },
     "image": "./assets/Larvitar.png",
     "weaknesses": {
-      "weaknesses_name": ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
-      "weaknesses_image": ["./assets/agua.png", "./assets/planta.png", "./assets/hielo.png", "./assets/lucha.png", "./assets/tierra.png", "./assets/acero.png"],
+      "weaknessesName": ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
+      "weaknessesImage": ["./assets/agua.png", "./assets/planta.png", "./assets/hielo.png", "./assets/lucha.png", "./assets/tierra.png", "./assets/acero.png"],
     },
     "baseStats": {
       "hp": 50,
