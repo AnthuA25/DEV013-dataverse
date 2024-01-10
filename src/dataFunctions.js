@@ -30,7 +30,7 @@ export const filterData = (data, filterBy, value) => {
 
 };
 
-export const pokemonsAverage  = (data,value) => {
-  const result = data.filter(type => type.type.type_name.includes(value)).length;
-  return result;
-};
+// export const computeStats(data)  = (data) => {
+//   const result = data.filter(type => type.type.type_name.includes(value)).length;
+//   return result;
+// };
