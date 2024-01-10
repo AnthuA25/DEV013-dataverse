@@ -202,12 +202,12 @@ dd[itemprop="name"] {
 
 dt {
   font-weight: bold;
-  margin-left: -240px;
+  margin-left: -220px;
   margin-top: 30px;
 }
 dd[itemprop="weaknesses"] {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 10px;
   margin-left: 50px;
   margin-top: 10px;

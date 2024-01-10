@@ -1,4 +1,4 @@
-import { filterData, pokemonsAverage, sortData} from './dataFunctions.js';
+import { filterData, sortData} from './dataFunctions.js';
 import { renderItems } from './view.js';
 
 import data from "./data/dataset.js";
@@ -64,34 +64,13 @@ filterType.addEventListener("change", () => {
   renderCurrentData();
 });
 
-// 
-const nameTypes = ()=>{
-  const namesPokemons=[];
-  for(let i=0;i<originalData.length;í++){
-    namesPokemons= originalData.filter(type=>type.type.type_name[i]);
-console.log(namesPokemons);
-  }
-}
-
-// 
-// const numberPokemons = () => {
-
-//   const nroPokemons = [];
-//   for(let i=0; i < originalData.length; i++){
-
-//   }
-// }
-
-
-renderCurrentData();
-
 new Chart(stadistic, {
   type: 'bar',
   data: {
-    labels: ['Electrico', 'Fuego', 'Volador', 'Green', 'Purple', 'Orange'],
+    labels: ['Electrico', 'Fuego', 'Volador', 'Agua', 'Bicho', 'Dragon','Veneno','Tierra','Roca','Psiquico','Planta','Oscuro','Normal','Lucha','Hada','Acero'],
     datasets: [{
-      label: '# of Votes',
-      data: [],
+      label: 'Cantidad de Pokemones',
+      data: [3,4,3,1,4,5,3,4,2,3,4,3,3,4,2,1],
       borderWidth: 1,
       backgroundColor: '#9BD0F5',
     }]
@@ -104,6 +83,10 @@ new Chart(stadistic, {
     }
   }
 });
+
+
+renderCurrentData();
+
 
 
 // console.log(pokemonsAverage(originalData))
