@@ -118,6 +118,36 @@ button[type="reset"] {
   /* min-width: 500px; */
 }
 
+.container-modal{
+  width: 400px;
+  height: 300px;
+  position: fixed;
+  z-index: 1;
+  background-color: var(--color-light-sky);
+  border-radius: 20px;
+  top: 400px;
+  left: 550px;
+}
+.container-modal > p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.container-modal >img{
+  width: 200px;
+  height: 200px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.container-modal > .fa-xmark{
+  position: relative;
+  bottom: 180px;
+  left: 10px;
+}
+.container-active{
+  display: block;
+}
 /* Main */
 #root {
   display: flex;

@@ -1,24 +1,21 @@
-import {
-  filterData,
-  sortData
-} from './dataFunctions.js';
-import {
-  renderItems
-} from './view.js';
+import { filterData, sortData } from "./dataFunctions.js";
+import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
 //import Chart from 'chart.js/auto';
 
 const containerCard = document.querySelector("#root");
-const sortOrderSelect = document.getElementById('name');
-const filterType = document.querySelector("select[data-testid='select-filter']");
+const sortOrderSelect = document.getElementById("name");
+const filterType = document.querySelector(
+  "select[data-testid='select-filter']"
+);
 const searchPokemons = document.querySelector("input[type='text']");
 const modal = document.getElementById("myBtn");
-const modalContent = document.querySelector('.modal-content');
-const close = document.querySelector('.fa-xmark');
-const stadistic = document.getElementById('myChart');
+const modalContent = document.querySelector(".modal-content");
+const close = document.querySelector(".fa-xmark");
+const stadistic = document.getElementById("myChart");
 //overlay
-const overlay = document.querySelector('.overlay');
-
+const overlay = document.querySelector(".overlay");
+const containe  =document.querySelector('container-modal');
 
 // Modal
 modal.addEventListener("click", () => {
@@ -28,6 +25,7 @@ modal.addEventListener("click", () => {
 close.addEventListener("click", () => {
   modalContent.classList.toggle("modal-active");
   overlay.classList.toggle("overlay-active");
+  containe.classList.add("container-active")
 });
 
 // create copy
@@ -41,37 +39,44 @@ const renderCurrentData = () => {
 };
 
 // boton pokemons search
-searchPokemons.addEventListener("input", () => {
+searchPokemons.addEventListener("change", () => {
   currentData = [];
   const value = searchPokemons.value;
-  const findPokemons = data.find(data => data.name.toLowerCase() === value)
+  const findPokemons = data.find((data) => data.name.toLowerCase() === value);
   if (findPokemons) {
     currentData.push(findPokemons);
     renderCurrentData(currentData);
+    searchPokemons.value = "";
+  } else {
+    const container = document.createElement("section");
+    container.classList.add("container-modal");
+    container.innerHTML = `<i class="fa-solid fa-xmark"></i>
+                            <img src="./assets/icono-cerrar.png" alt="Error"/>
+                            <p>Pokemon no encontrado</p>`;
+    document.querySelector('body').appendChild(container);
+    searchPokemons.value = "";
   }
-})
-
+});
 
 // Resetear al estado original
-const resetbutton= document.querySelector("[type=\"reset\"]");
-resetbutton.addEventListener('click',()=>{
+const resetbutton = document.querySelector('[type="reset"]');
+resetbutton.addEventListener("click", () => {
   currentData = originalData;
   containerCard.innerHTML = renderItems(currentData);
-
 });
 
 // alfabetic order
-sortOrderSelect.addEventListener('change', () => {
+sortOrderSelect.addEventListener("change", () => {
   const sortOrder = sortOrderSelect.value;
-  currentData = sortData(currentData, 'name', sortOrder);
+  currentData = sortData(currentData, "name", sortOrder);
   renderCurrentData();
 });
 
 // Filter Type
 filterType.addEventListener("change", () => {
   const selectedFilter = filterType.value;
-  currentData = filterData(originalData, 'typeName', selectedFilter);
-  currentData = sortData(currentData, 'name', sortOrderSelect.value);
+  currentData = filterData(originalData, "typeName", selectedFilter);
+  currentData = sortData(currentData, "name", sortOrderSelect.value);
   renderCurrentData();
 });
 
@@ -85,48 +90,48 @@ for (let i = 0; i < originalData.length; i++) {
   for (let j = 0; j < types.length; j++) {
     uniqueType.add(types[j]);
     //console.log("uniq"+uniqueType);
-
   }
-
 }
 
 names = Array.from(uniqueType);
 
 let sametypes = 0;
 for (let i = 0; i < names.length; i++) {
-  sametypes = data.filter(type => type.type.typeName.includes(names[i])).length;
+  sametypes = data.filter((type) =>
+    type.type.typeName.includes(names[i])
+  ).length;
   // console.log(sametypes);
   nroPokemons.push(sametypes);
 }
 // console.log(nroPokemons);
 
-
 // eslint-disable-next-line no-undef
 new Chart(stadistic, {
-  type: 'bar',
+  type: "bar",
   data: {
     labels: names,
-    datasets: [{
-      label: '# of Votes',
-      data: nroPokemons,
-      borderWidth: 1,
-      backgroundColor: '#9BD0F5',
-      font: {
-        size: 14,
-        weight: 'bolder',
-      }
-    }]
+    datasets: [
+      {
+        label: "# of Votes",
+        data: nroPokemons,
+        borderWidth: 1,
+        backgroundColor: "#9BD0F5",
+        font: {
+          size: 14,
+          weight: "bolder",
+        },
+      },
+    ],
   },
   options: {
     scales: {
       y: {
-        beginAtZero: true
-      }
-    }
-  }
+        beginAtZero: true,
+      },
+    },
+  },
 });
 
 renderCurrentData();
-
 
 // console.log(pokemonsAverage(originalData))
