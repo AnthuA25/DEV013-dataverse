@@ -1,3 +1,4 @@
+
 import {
   filterData,
   sortData,
@@ -6,19 +7,23 @@ import {
 import {
   renderItems
 } from './view.js';
+
 import data from "./data/dataset.js";
 //import Chart from 'chart.js/auto';
 
 const containerCard = document.querySelector("#root");
-const sortOrderSelect = document.getElementById('name');
-const filterType = document.querySelector("select[data-testid='select-filter']");
+const sortOrderSelect = document.getElementById("name");
+const filterType = document.querySelector(
+  "select[data-testid='select-filter']"
+);
+const form = document.getElementById('formFilters');
 const searchPokemons = document.querySelector("input[type='text']");
 const modal = document.getElementById("myBtn");
-const modalContent = document.querySelector('.modal-content');
-const close = document.querySelector('.fa-xmark');
-const stadistic = document.getElementById('myChart');
+const modalContent = document.querySelector(".modal-content");
+const close = document.querySelector(".fa-xmark");
+const stadistic = document.getElementById("myChart");
 //overlay
-const overlay = document.querySelector('.overlay');
+const overlay = document.querySelector(".overlay");
 
 
 // Modal
@@ -42,26 +47,36 @@ const renderCurrentData = () => {
 };
 
 // boton pokemons search
-searchPokemons.addEventListener("input", () => {
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
   currentData = [];
   const value = searchPokemons.value;
-  const findPokemons = data.find(data => data.name.toLowerCase() === value)
+  const findPokemons = data.find((data) => data.name.toLowerCase() === value);
   if (findPokemons) {
     currentData.push(findPokemons);
     renderCurrentData(currentData);
+    searchPokemons.value = "";
+  } else {
+    const container = document.createElement("section");
+    container.classList.add("container-modal");
+    container.innerHTML = `<i class="fa-solid fa-xmark"></i>
+                            <img src="./assets/icono-cerrar.png" alt="Error"/>
+                            <p>Pokemon no encontrado</p>`;
+    container.querySelector('.fa-xmark').addEventListener("click",()=>{
+      container.remove();
+    })
+    document.querySelector('body').appendChild(container);
+    searchPokemons.value = "";
   }
-  else{
-    //document.
-  }
-})
+});
+
 
 
 // Resetear al estado original
-const resetbutton= document.querySelector("[type=\"reset\"]");
-resetbutton.addEventListener('click',()=>{
+const resetbutton = document.querySelector('[type="reset"]');
+resetbutton.addEventListener("click", () => {
   currentData = originalData;
   containerCard.innerHTML = renderItems(currentData);
-  
   const resultchart = computeStats(originalData);
   const names= resultchart.names;
   const nroPokemons=resultchart.nroPokemons;
@@ -70,17 +85,17 @@ resetbutton.addEventListener('click',()=>{
 });
 
 // alfabetic order
-sortOrderSelect.addEventListener('change', () => {
+sortOrderSelect.addEventListener("change", () => {
   const sortOrder = sortOrderSelect.value;
-  currentData = sortData(currentData, 'name', sortOrder);
+  currentData = sortData(currentData, "name", sortOrder);
   renderCurrentData();
 });
 
 // Filter Type
 filterType.addEventListener("change", () => {
   const selectedFilter = filterType.value;
-  currentData = filterData(originalData, 'typeName', selectedFilter);
-  currentData = sortData(currentData, 'name', sortOrderSelect.value);
+  currentData = filterData(originalData, "typeName", selectedFilter);
+  currentData = sortData(currentData, "name", sortOrderSelect.value);
   renderCurrentData();
 });
 
@@ -118,6 +133,5 @@ const nroPokemons=resultchart.nroPokemons;
 updateChart(names, nroPokemons);
 
 renderCurrentData();
-
 
 // console.log(pokemonsAverage(originalData))

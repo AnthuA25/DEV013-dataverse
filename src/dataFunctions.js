@@ -44,7 +44,7 @@ export const computeStats = (originalData) => {
       //console.log("uniq"+uniqueType);
     }
   }
-
+  
   names = Array.from(uniqueType);
 
   let sametypes = 0;
