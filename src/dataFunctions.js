@@ -29,30 +29,33 @@ export const filterData = (data, filterBy, value) => {
   return result;
 };
 
-// export const computeStats = (originalData) => {
-//   // const result = data.filter(type => type.type.type_name.includes(value)).length;
-//   // return result;
-//   let names = [];
-//   const nroPokemons = [];
-//   // eslint-disable-next-line no-undef
-//   const uniqueType = new Set();
-//   for (let i = 0; i < originalData.length; i++) {
-//     const types = originalData[i].type.typeName;
-//     //console.log("pokk"+types);
-//     for (let j = 0; j < types.length; j++) {
-//       uniqueType.add(types[j]);
-//       //console.log("uniq"+uniqueType);
-//     }
-//   }
+export const computeStats = (originalData) => {
+  // const result = data.filter(type => type.type.type_name.includes(value)).length;
+  // return result;
+  let names = [];
+  const nroPokemons = [];
+  // eslint-disable-next-line no-undef
+  const uniqueType = new Set();
+  for (let i = 0; i < originalData.length; i++) {
+    const types = originalData[i].type.typeName;
+    //console.log("pokk"+types);
+    for (let j = 0; j < types.length; j++) {
+      uniqueType.add(types[j]);
+      //console.log("uniq"+uniqueType);
+    }
+  }
 
-//   names = Array.from(uniqueType);
+  names = Array.from(uniqueType);
 
-//   let sametypes = 0;
-//   for (let i = 0; i < names.length; i++) {
-//     sametypes = originalData.filter((type) =>
-//       type.type.typeName.includes(names[i])
-//     ).length;
-//     // console.log(sametypes);
-//     nroPokemons.push(sametypes);
-//   }
-// };
+  let sametypes = 0;
+  for (let i = 0; i < names.length; i++) {
+    sametypes = originalData.filter((type) =>
+      type.type.typeName.includes(names[i])
+    ).length;
+    // console.log(sametypes);
+    nroPokemons.push(sametypes);
+  }
+  return{
+    names,nroPokemons
+  }
+};

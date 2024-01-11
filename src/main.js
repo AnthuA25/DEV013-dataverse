@@ -1,6 +1,7 @@
 import {
   filterData,
-  sortData
+  sortData,
+  computeStats
 } from './dataFunctions.js';
 import {
   renderItems
@@ -49,6 +50,9 @@ searchPokemons.addEventListener("input", () => {
     currentData.push(findPokemons);
     renderCurrentData(currentData);
   }
+  else{
+    //document.
+  }
 })
 
 
@@ -57,6 +61,11 @@ const resetbutton= document.querySelector("[type=\"reset\"]");
 resetbutton.addEventListener('click',()=>{
   currentData = originalData;
   containerCard.innerHTML = renderItems(currentData);
+  
+  const resultchart = computeStats(originalData);
+  const names= resultchart.names;
+  const nroPokemons=resultchart.nroPokemons;
+  updateChart(names, nroPokemons);
 
 });
 
@@ -75,56 +84,38 @@ filterType.addEventListener("change", () => {
   renderCurrentData();
 });
 
-let names = [];
-const nroPokemons = [];
-// eslint-disable-next-line no-undef
-const uniqueType = new Set();
-for (let i = 0; i < originalData.length; i++) {
-  const types = originalData[i].type.typeName;
-  //console.log("pokk"+types);
-  for (let j = 0; j < types.length; j++) {
-    uniqueType.add(types[j]);
-    //console.log("uniq"+uniqueType);
-
-  }
-
-}
-
-names = Array.from(uniqueType);
-
-let sametypes = 0;
-for (let i = 0; i < names.length; i++) {
-  sametypes = data.filter(type => type.type.typeName.includes(names[i])).length;
-  // console.log(sametypes);
-  nroPokemons.push(sametypes);
-}
-// console.log(nroPokemons);
-
-
-// eslint-disable-next-line no-undef
-new Chart(stadistic, {
-  type: 'bar',
-  data: {
-    labels: names,
-    datasets: [{
-      label: '# of Votes',
-      data: nroPokemons,
-      borderWidth: 1,
-      backgroundColor: '#9BD0F5',
-      font: {
-        size: 14,
-        weight: 'bolder',
-      }
-    }]
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
+const updateChart = (names,nroPokemons)=>{
+  // eslint-disable-next-line no-undef
+  new Chart(stadistic, {
+    type: 'bar',
+    data: {
+      labels: names,
+      datasets: [{
+        label: '# of Pokemons for type',
+        data: nroPokemons,
+        borderWidth: 1,
+        backgroundColor: '#9BD0F5',
+        font: {
+          size: 14,
+          weight: 'bolder',
+        }
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
       }
     }
-  }
-});
+  });
+
+}
+
+const resultchart = computeStats(originalData);
+const names= resultchart.names;
+const nroPokemons=resultchart.nroPokemons;
+updateChart(names, nroPokemons);
 
 renderCurrentData();
 
