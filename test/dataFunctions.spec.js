@@ -1,4 +1,4 @@
-import { filterData, sortData } from '../src/dataFunctions.js';
+import { filterData, sortData, computeStats } from '../src/dataFunctions.js';
 // import { data as fakeData } from './data.js';
 
 describe('SORTDATA', () =>{
@@ -46,4 +46,22 @@ describe('FILTERDATA', () => {
 
 });
 
+describe('COMPUTESTATS', ()=>{
+  it('COMPUTESTATS EXISTS',()=>{
+    expect(typeof computeStats).toBe('function');
+  });
 
+  it('COMPUTESTATS RETURNS CORRECT RESULT',()=>{
+    const TEST_DATA=[
+      {type:{typeName:['Electric']}},
+      {type:{typeName:['Electric']}},
+      {type:{typeName:['Bug']}},
+      {type:{typeName:['Fire']}},
+      {type:{typeName:['Fire']}},
+      {type:{typeName:['Fire']}},
+    ];
+    const result=computeStats(TEST_DATA);
+    expect(result.names).toEqual(['Electric','Bug','Fire']);
+    expect(result.nroPokemons).toEqual([2,1,3]);
+  });
+});
