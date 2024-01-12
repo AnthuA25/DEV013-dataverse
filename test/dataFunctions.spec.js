@@ -14,6 +14,12 @@ describe('SORTDATA', () =>{
     const sortOrder = 'asc'
     expect(sortData(TEST_SORT, sortBy, sortOrder )).toEqual([{"name": "Abra"}, {"name": "Bulsaur"}, {"name": "Caterpie"}]);
   });
+  it('SORT DESCENDING', ()=>{
+    const TEST_SORT = [{name:"Bulsaur"},{name:'Abra'},{name:'Caterpie'}];
+    const sortBy = 'name';
+    const sortOrder = 'desc'
+    expect(sortData(TEST_SORT, sortBy, sortOrder )).toEqual([{name:'Caterpie'},{name:"Bulsaur"},{name:'Abra'}]);
+  });
   // 3. Estresar al test
   it('DATA EMPTY', ()=>{
     const TEST_SORT = [];
@@ -39,4 +45,5 @@ describe('FILTERDATA', () => {
   });
 
 });
+
 
