@@ -59,11 +59,13 @@ form.addEventListener("submit", (e) => {
   } else {
     const container = document.createElement("section");
     container.classList.add("container-modal");
+    overlay.classList.toggle("overlay-active");
     container.innerHTML = `<i class="fa-solid fa-xmark"></i>
                             <img src="./assets/icono-cerrar.png" alt="Error"/>
                             <p>Pokemon no encontrado</p>`;
     container.querySelector('.fa-xmark').addEventListener("click",()=>{
       container.remove();
+      overlay.classList.toggle("overlay-active");
     })
     document.querySelector('body').appendChild(container);
     searchPokemons.value = "";

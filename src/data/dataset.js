@@ -1,7 +1,7 @@
 export default [
   {
-    "id": 1,
-    "name": "Bulbasaur",
+    "id": "1",
+    "name": "bulbasaur",
     "type":{
         "typeName": ["Grass","Poison"],
         "typeImage": ["./assets/planta.png","./assets/veneno.png"],
@@ -14,19 +14,19 @@ export default [
       "weaknessesImage":["./assets/fuego.png","./assets/volador.png","./assets/hielo.png","./assets/psiquico.png"],
     },
     "baseStats": {
-      "hp": 45,
-      "attack": 49,
-      "defense": 49,
-      "speed": 45,
+      "hp": "45",
+      "attack": "49",
+      "defense": "49",
+      "speed": "45",
     },
-    "height": 0.7, // en metros
+    "height": "0.7", // en metros
     "category": "Seed",
     "ability": "Overgrow",
-    "weight": 6.9, // en kilogramos
+    "weight": "6.9", // en kilogramos
   },
   {
-    "id": 4,
-    "name": "Charmander",
+    "id": "4",
+    "name": "charmander",
     "type":{
       "typeName": ["Fire"],
       "typeImage":["./assets/fuego.png"],
@@ -37,19 +37,19 @@ export default [
       "weaknessesImage":["./assets/agua.png","./assets/roca.png","./assets/tierra.png"],
     },
     "baseStats": {
-      "hp": 39,
-      "attack": 52,
-      "defense": 43,
-      "speed": 65,
+      "hp": "39",
+      "attack": "52",
+      "defense": "43",
+      "speed": "65",
     },
-    "height": 0.6,
+    "height": "0.6",
     "category": "Lizard",
     "ability": "Blaze",
-    "weight": 8.5,
+    "weight": "8.5",
   },
   {
-    "id": 5,
-    "name": "Charmeleon",
+    "id": "5",
+    "name": "charmeleon",
     "type": {
       "typeName": ["Fire"],
       "typeImage": ["./assets/fuego.png"],
@@ -60,19 +60,19 @@ export default [
       "weaknessesImage": ["./assets/agua.png", "./assets/roca.png", "./assets/tierra.png"],
     },
     "baseStats": {
-      "hp": 58,
-      "attack": 64,
-      "defense": 58,
-      "speed": 80,
+      "hp": "58",
+      "attack": "64",
+      "defense": "58",
+      "speed": "80",
     },
-    "height": 1.1,
+    "height": "1.1",
     "category": "Flame",
     "ability": "Blaze",
-    "weight": 19.0,
+    "weight": "19.0",
   },
   {
-    "id": 6,
-    "name": "Charizard",
+    "id": "6",
+    "name": "charizard",
     "type": {
       "typeName": ["Fire", "Flying"],
       "typeImage": ["./assets/fuego.png", "./assets/volador.png"],
@@ -83,19 +83,19 @@ export default [
       "weaknessesImage": ["./assets/agua.png", "./assets/electrico.png", "./assets/roca.png"],
     },
     "baseStats": {
-      "hp": 78,
-      "attack": 84,
-      "defense": 78,
-      "speed": 100,
+      "hp": "78",
+      "attack": "84",
+      "defense": "78",
+      "speed": "100",
     },
-    "height": 1.7,
+    "height": "1.7",
     "category": "Flame",
     "ability": "Blaze",
-    "weight": 90.5,
+    "weight": "90.5",
   },
   {
-    "id": 7,
-    "name": "Squirtle",
+    "id": "7",
+    "name": "squirtle",
     "type":{
       "typeName": ["Water"],
       "typeImage": ["./assets/agua.png"],
@@ -106,19 +106,19 @@ export default [
       "weaknessesImage":["./assets/electrico.png","./assets/planta.png"],
     },
     "baseStats": {
-      "hp": 44,
-      "attack": 48,
-      "defense": 65,
-      "speed": 43,
+      "hp": "44",
+      "attack": "48",
+      "defense": "65",
+      "speed": "43",
     },
-    "height": 0.5,
+    "height": "0.5",
     "category": "Tiny Turtle",
     "ability": "Torrent",
-    "weight": 9.0,
+    "weight": "9.0",
   },
   {
-    "id": 8,
-    "name": "Wartortle",
+    "id": "8",
+    "name": "wartortle",
     "type": {
       "typeName": ["Water"],
       "typeImage": ["./assets/agua.png"],
@@ -129,19 +129,19 @@ export default [
       "weaknessesImage": ["./assets/electrico.png", "./assets/planta.png"],
     },
     "baseStats": {
-      "hp": 59,
-      "attack": 63,
-      "defense": 80,
-      "speed": 58,
+      "hp": "59",
+      "attack": "63",
+      "defense": "80",
+      "speed": "58",
     },
-    "height": 1.0,
+    "height": "1.0",
     "category": "Turtle",
     "ability": "Torrent",
-    "weight": 22.5,
+    "weight": "22.5",
   },
   {
-    "id": 10,
-    "name": "Caterpie",
+    "id": "10",
+    "name": "caterpie",
     "type": {
       "typeName": ["Bug"],
       "typeImage": ["./assets/bicho.png"],
@@ -152,19 +152,19 @@ export default [
       "weaknessesImage": ["./assets/volador.png", "./assets/roca.png", "./assets/fuego.png"],
     },
     "baseStats": {
-      "hp": 45,
-      "attack": 30,
-      "defense": 35,
-      "speed": 45,
+      "hp": "45",
+      "attack": "30",
+      "defense": "35",
+      "speed": "45",
     },
-    "height": 0.3,
+    "height": "0.3",
     "category": "Worm",
     "ability": "Shield Dust",
-    "weight": 2.9,
+    "weight": "2.9",
   },
   {
-    "id": 35,
-    "name": "Clefairy",
+    "id": "35",
+    "name": "clefairy",
     "type":{
       "typeName": ["Fairy"],
       "typeImage":["./assets/hada.png"],
@@ -175,19 +175,19 @@ export default [
       "weaknessesImage":["./assets/acero.png","./assets/veneno.png"],
     },
     "baseStats": {
-      "hp": 70,
-      "attack": 45,
-      "defense": 48,
-      "speed": 35,
+      "hp": "70",
+      "attack": "45",
+      "defense": "48",
+      "speed": "35",
     },
-    "height": 0.6,
+    "height": "0.6",
     "category": "Fairy",
     "ability": "Cute Charm",
-    "weight": 7.5,
+    "weight": "7.5",
   },
   {
-    "id": 25,
-    "name": "Pikachu",
+    "id": "25",
+    "name": "pikachu",
     "type":{
       "typeName": ["Electric"],
       "typeImage":["./assets/electrico.png"],
@@ -198,19 +198,19 @@ export default [
       "weaknessesImage":["./assets/tierra.png"],
     },
     "baseStats": {
-      "hp": 35,
-      "attack": 55,
-      "defense": 40,
-      "speed": 90,
+      "hp": "35",
+      "attack": "55",
+      "defense": "40",
+      "speed": "90",
     },
-    "height": 0.4,
+    "height": "0.4",
     "category": "Mouse",
     "ability": "Static",
-    "weight": 6.0,
+    "weight": "6.0",
   },
   {
-    "id": 50,
-    "name": "Diglett",
+    "id": "50",
+    "name": "diglett",
     "type":{
       "typeName": ["Ground"],
       "typeImage":["./assets/tierra.png"],
@@ -221,19 +221,19 @@ export default [
       "weaknessesImage":["./assets/agua.png","./assets/planta.png","./assets/hielo.png"],
     },
     "baseStats": {
-      "hp": 10,
-      "attack": 55,
-      "defense": 25,
-      "speed": 95,
+      "hp": "10",
+      "attack": "55",
+      "defense": "25",
+      "speed": "95",
     },
-    "height": 0.2,
+    "height": "0.2",
     "category": "Mole",
     "ability": "Sand Veil",
-    "weight": 0.8,
+    "weight": "0.8",
   },
   {
-    "id": 23,
-    "name": "Ekans",
+    "id": "23",
+    "name": "ekans",
     "type":{
       "typeName": ["Poison"],
       "typeImage":["./assets/veneno.png"],
@@ -244,19 +244,19 @@ export default [
       "weaknessesImage":["./assets/tierra.png","./assets/psiquico.png"],
     },
     "baseStats": {
-      "hp": 35,
-      "attack": 60,
-      "defense": 44,
-      "speed": 55,
+      "hp": "35",
+      "attack": "60",
+      "defense": "44",
+      "speed": "55",
     },
-    "height": 2.0,
+    "height": "2.0",
     "category": "Snake",
     "ability": "Intimidate",
-    "weight": 6.9,
+    "weight": "6.9",
   },
   {
-    "id": 26,
-    "name": "Raichu",
+    "id": "26",
+    "name": "raichu",
     "type": {
       "typeName": ["Electric"],
       "typeImage": ["./assets/electrico.png"],
@@ -267,19 +267,19 @@ export default [
       "weaknessesImage": ["./assets/tierra.png"],
     },
     "baseStats": {
-      "hp": 60,
-      "attack": 90,
-      "defense": 55,
-      "speed": 100,
+      "hp": "60",
+      "attack": "90",
+      "defense": "55",
+      "speed": "100",
     },
-    "height": 0.8,
+    "height": "0.8",
     "category": "Mouse",
     "ability": "Static",
-    "weight": 30.0,
+    "weight": "30.0",
   },
   {
-    "id": 56,
-    "name": "Mankey",
+    "id": "56",
+    "name": "mankey",
     "type": {
       "typeName": ["Fighting"],
       "typeImage": ["./assets/lucha.png"],
@@ -290,19 +290,19 @@ export default [
       "weaknessesImage": ["./assets/volador.png", "./assets/psiquico.png", "./assets/hada.png"],
     },
     "baseStats": {
-      "hp": 40,
-      "attack": 80,
-      "defense": 35,
-      "speed": 70,
+      "hp": "40",
+      "attack": "80",
+      "defense": "35",
+      "speed": "70",
     },
-    "height": 0.5,
+    "height": "0.5",
     "category": "Pig Monkey",
     "ability": "Vital Spirit",
-    "weight": 28.0,
+    "weight": "28.0",
   },
   {
     "id": 62,
-    "name": "Poliwrath",
+    "name": "poliwrath",
     "type": {
       "typeName": ["Water", "Fighting"],
       "typeImage": ["./assets/agua.png", "./assets/lucha.png"],
@@ -325,7 +325,7 @@ export default [
   },
   {
     "id": 63,
-    "name": "Abra",
+    "name": "abra",
     "type": {
       "typeName": ["Psychic"],
       "typeImage": ["./assets/psiquico.png"],
@@ -348,7 +348,7 @@ export default [
   },
   {
     "id": 66,
-    "name": "Machop",
+    "name": "machop",
     "type":{
       "typeName": ["Fighting"],
       "typeImage":["./assets/lucha.png"],
@@ -371,7 +371,7 @@ export default [
   },
   {
     "id": 79,
-    "name": "Slowpoke",
+    "name": "slowpoke",
     "type": {
       "typeName": ["Water", "Psychic"],
       "typeImage": ["./assets/agua.png", "./assets/psiquico.png"],
@@ -394,7 +394,7 @@ export default [
   },
   {
     "id": 16,
-    "name": "Pidgey",
+    "name": "pidgey",
     "type":{
       "typeName": ["Normal","Flying"],
       "typeImage":["./assets/volador.png","./assets/normal.png"],
@@ -417,7 +417,7 @@ export default [
   },
   {
     "id": 2,
-    "name": "Ivysaur",
+    "name": "ivysaur",
     "type":{
       "typeName": ["Grass","Poison"],
       "typeImage":["./assets/planta.png","./assets/veneno.png"],
@@ -440,7 +440,7 @@ export default [
   },
   {
     "id": 94,
-    "name": "Gengar",
+    "name": "gengar",
     "type": {
       "typeName": ["Ghost", "Poison"],
       "typeImage": ["./assets/fantasma.png", "./assets/veneno.png"],
@@ -463,7 +463,7 @@ export default [
   },
   {
     "id": 92,
-    "name": "Gastly",
+    "name": "gastly",
     "type":{
       "typeName": ["Ghost","Poison"],
       "typeImage":["./assets/fantasma.png","./assets/veneno.png"],
@@ -486,7 +486,7 @@ export default [
   },
   {
     "id": 48,
-    "name": "Venonat",
+    "name": "venonat",
     "type":{
       "typeName": ["Bug","Poison"],
       "typeImage":["./assets/bicho.png","./assets/veneno.png"],
@@ -509,7 +509,7 @@ export default [
   },
   {
     "id": 104,
-    "name": "Cubone",
+    "name": "cubone",
     "type": {
       "typeName": ["Ground"],
       "typeImage": ["./assets/tierra.png"],
@@ -532,7 +532,7 @@ export default [
   },
   {
     "id": 113,
-    "name": "Chansey",
+    "name": "chansey",
     "type": {
       "typeName": ["Normal"],
       "typeImage": ["./assets/normal.png"],
@@ -555,7 +555,7 @@ export default [
   },
   {
     "id": 123,
-    "name": "Scyther",
+    "name": "scyther",
     "type": {
       "typeName": ["Bug", "Flying"],
       "typeImage": ["./assets/bicho.png", "./assets/volador.png"],
@@ -578,7 +578,7 @@ export default [
   },
   {
     "id": 135,
-    "name": "Jolteon",
+    "name": "jolteon",
     "type": {
       "typeName": ["Electric"],
       "typeImage": ["./assets/electrico.png"],
@@ -601,7 +601,7 @@ export default [
   },
   {
     "id": 173,
-    "name": "Cleffa",
+    "name": "cleffa",
     "type": {
       "typeName": ["Fairy"],
       "typeImage": ["./assets/hada.png"],
@@ -624,7 +624,7 @@ export default [
   },
   {
     "id": 175,
-    "name": "Togepi",
+    "name": "togepi",
     "type": {
       "typeName": ["Fairy"],
       "typeImage": ["./assets/hada.png"],
@@ -647,7 +647,7 @@ export default [
   },
   {
     "id": 246,
-    "name": "Larvitar",
+    "name": "larvitar",
     "type": {
       "typeName": ["Stone", "Ground"],
       "typeImage": ["./assets/roca.png", "./assets/tierra.png"],
