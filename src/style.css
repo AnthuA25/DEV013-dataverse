@@ -167,7 +167,7 @@ dd {
   justify-content: center;
   margin: 0;
 }
-dd[itemprop="type"] {
+.type {
   display: flex;
   justify-content: start;
   border-radius: 0 60px 0 0;
@@ -175,7 +175,7 @@ dd[itemprop="type"] {
   height: 174px;
 }
 
-dd[itemprop="type"] > img {
+.type > img {
   width: 40px;
   height: 40px;
   margin-top: 3px;
@@ -210,22 +210,21 @@ dd[itemprop="icons3"] > img {
   height: 40px;
 } */
 
-dd[itemprop="image"] {
+.image{
   margin-top: -200px;
 }
-dd[itemprop="image"] > img {
+.image > img {
   height: 350px;
   margin-top: 30px;
 }
-
-dd[itemprop="image"] > img:hover {
+.image > img:hover {
   transform: scale(1.1) translate(20px);
   filter: drop-shadow(-30px 2px 10px rgba(0, 0, 0, 0.7));
 /* skew(30deg, 20deg); */
 /* translate(10px) */
 }
 
-dd[itemprop="name"] {
+.name {
   font-weight: bolder;
   font-size: 2rem;
   text-align: center;
@@ -237,14 +236,14 @@ dt {
   margin-left: -220px;
   margin-top: 30px;
 }
-dd[itemprop="weaknesses"] {
+.weaknesses {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-left: 50px;
   margin-top: 10px;
 }
-dd[itemprop="weaknesses"] > img {
+.weaknesses > img {
   width: 40px;
 }
 
