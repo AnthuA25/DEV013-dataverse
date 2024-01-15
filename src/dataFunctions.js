@@ -36,14 +36,18 @@ export const computeStats = (originalData) => {
   const nroPokemons = [];
   // eslint-disable-next-line no-undef
   const uniqueType = new Set();
-  for (let i = 0; i < originalData.length; i++) {
-    const types = originalData[i].type.typeName;
-    //console.log("pokk"+types);
-    for (let j = 0; j < types.length; j++) {
-      uniqueType.add(types[j]);
-      //console.log("uniq"+uniqueType);
-    }
-  }
+  // for (let i = 0; i < originalData.length; i++) {
+  //   const types = originalData[i].type.typeName;
+  //   for (let j = 0; j < types.length; j++) {
+  //     uniqueType.add(types[j]);
+  //   }
+  // }
+  originalData.forEach((data) =>{
+    const types = data.type.typeName;
+    types.forEach((el) => {
+      uniqueType.add(el);
+    })
+  })
   
   names = Array.from(uniqueType);
 
