@@ -220,9 +220,11 @@ export default [
 
 > Prototipo Web
 
-![Diseño web](Prototipo-Web.png)
 
-<!-- ![Diseño móvil](Prototipo-movil.png) -->
+<p align="center">
+<img src="Prototipo-web.png">
+</p>
+
 
 [Figma](https://www.figma.com/file/twg4MrXgEyAfpr7BHI7aYH/Data-Pokemon?type=design&node-id=0-1&mode=design&t=xSH2aC8qhrQSdYBp-0)
 
