@@ -33,7 +33,7 @@ export const computeStats = (originalData) => {
   // const result = data.filter(type => type.type.type_name.includes(value)).length;
   // return result;
   let names = [];
-  const nroPokemons = [];
+  //const nroPokemons = [];
   // eslint-disable-next-line no-undef
   const uniqueType = new Set();
   for (let i = 0; i < originalData.length; i++) {
@@ -46,15 +46,25 @@ export const computeStats = (originalData) => {
   }
   
   names = Array.from(uniqueType);
-
-  let sametypes = 0;
+  
+  /* let sametypes = 0;
   for (let i = 0; i < names.length; i++) {
     sametypes = originalData.filter((type) =>
       type.type.typeName.includes(names[i])
     ).length;
     // console.log(sametypes);
     nroPokemons.push(sametypes);
-  }
+  }  */
+
+  //originalData.filter((pokemon) => pokemon.type.typeName.includes(typeName)).length
+  const nroPokemons = names.map((typeName) =>
+    originalData.reduce((accumulator, pokemon) => {
+      if (pokemon.type.typeName.includes(typeName)) {
+        return accumulator + 1;
+      }
+      return parseInt(accumulator);
+    }, 0)
+  );
   return{
     names,nroPokemons
   }
