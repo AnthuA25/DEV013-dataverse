@@ -75,15 +75,15 @@ export const renderItems = (data) => {
     return (html += `
   
       <dl itemtype="pokemons" itemscope>
-        <dd itemprop="type" ${style}>
+        <dd itemprop="type" ${style} class="type">
           ${type}
         </dd>
-        <dd itemprop="image">
+        <dd itemprop="image" class="image">
           <img src=${pokemon.image} alt=${pokemon.name}/>
         </dd>
-        <dd itemprop="name">${pokemon.name}</dd>
+        <dd itemprop="name" class="name">${pokemon.name}</dd>
         <dt>Debilidades</dt>
-        <dd itemprop="weaknesses">${weaknesses}</dd>
+        <dd itemprop="weaknesses" class="weaknesses">${weaknesses}</dd>
       </dl>
     
     `);
