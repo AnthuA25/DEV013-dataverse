@@ -43,7 +43,11 @@ let currentData = originalData;
 
 //
 const renderCurrentData = () => {
-  containerCard.innerHTML = renderItems(currentData);
+  containerCard.innerHTML = `
+    <ul>
+    ${renderItems(currentData)}
+    </ul>
+  `
 };
 
 // boton pokemons search
@@ -78,7 +82,11 @@ form.addEventListener("submit", (e) => {
 const resetbutton = document.querySelector('[type="reset"]');
 resetbutton.addEventListener("click", () => {
   currentData = originalData;
-  containerCard.innerHTML = renderItems(currentData);
+  containerCard.innerHTML = `
+    <ul>
+    ${renderItems(currentData)}
+    </ul>
+  `
   const resultchart = computeStats(originalData);
   const names= resultchart.names;
   const nroPokemons=resultchart.nroPokemons;
