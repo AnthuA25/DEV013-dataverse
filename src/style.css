@@ -132,7 +132,6 @@ button[type="reset"] {
   text-align: center;
   font-weight: bold;
   font-size: 1.5rem;
-  margin: 0;
 }
 .container-modal >img{
   width: 200px;
@@ -150,19 +149,32 @@ button[type="reset"] {
 }
 /* Main */
 #root {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; */
+  /* width: 100%; */
+  margin: 0;
+}
+ul{
+  /* list-style: none; */width: 100%;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
+  gap:40px;
   justify-content: space-around;
+  /* justify-content: space-around;
+  gap: 40px;
+  border: solid 2px white; */
 }
-
-dl[itemtype="pokemons"] {
+li[itemtype="pokemons"] {
   background-color: var(--color-light-blue);
   width: 363px;
   height: 510px;
   border-radius: 0 60px 0 60px;
+  list-style: none;
+  border: solid 2px white;
 }
-dt,
-dd {
+div,.name,h3{
   display: flex;
   justify-content: center;
   margin: 0;
@@ -231,10 +243,11 @@ dd[itemprop="icons3"] > img {
   margin-top: -10px;
 }
 
-dt {
+h3 {
   font-weight: bold;
-  margin-left: -220px;
-  margin-top: 30px;
+  /* margin-left: -95px; */
+  margin-left: -200px;
+  margin-top: 20px;
 }
 .weaknesses {
   display: flex;
@@ -342,3 +355,4 @@ footer p {
     width: 250px;
   }
 }
+
