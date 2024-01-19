@@ -1,22 +1,13 @@
-
-import {
-  filterData,
-  sortData,
-  computeStats
-} from './dataFunctions.js';
-import {
-  renderItems
-} from './view.js';
+import { filterData, sortData, computeStats } from "./dataFunctions.js";
+import { renderItems } from "./view.js";
 
 import data from "./data/dataset.js";
 //import Chart from 'chart.js/auto';
 
-const containerCard = document.querySelector("#root");
+const containerCard = document.querySelector("ul");
 const sortOrderSelect = document.getElementById("name");
-const filterType = document.querySelector(
-  "select[data-testid='select-filter']"
-);
-const form = document.getElementById('formFilters');
+const filterType = document.getElementById("type");
+const form = document.getElementById("formFilters");
 const searchPokemons = document.querySelector("input[type='text']");
 const modal = document.getElementById("myBtn");
 const modalContent = document.querySelector(".modal-content");
@@ -24,7 +15,8 @@ const close = document.querySelector(".fa-xmark");
 const stadistic = document.getElementById("myChart");
 //overlay
 const overlay = document.querySelector(".overlay");
-
+// const infoPokemons = document.querySelector("dl[itemprop='pokemons']")
+// console.log(infoPokemons)
 
 // Modal
 modal.addEventListener("click", () => {
@@ -44,6 +36,7 @@ let currentData = originalData;
 //
 const renderCurrentData = () => {
   containerCard.innerHTML = renderItems(currentData);
+  // console.log(containerCard.querySelectorAll("dd[itemprop='image']"));
 };
 
 // boton pokemons search
@@ -63,16 +56,14 @@ form.addEventListener("submit", (e) => {
     container.innerHTML = `<i class="fa-solid fa-xmark"></i>
                             <img src="./assets/icono-cerrar.png" alt="Error"/>
                             <p>Pokemon no encontrado</p>`;
-    container.querySelector('.fa-xmark').addEventListener("click",()=>{
+    container.querySelector(".fa-xmark").addEventListener("click", () => {
       container.remove();
       overlay.classList.toggle("overlay-active");
-    })
-    document.querySelector('body').appendChild(container);
+    });
+    document.querySelector("body").appendChild(container);
     searchPokemons.value = "";
   }
 });
-
-
 
 // Resetear al estado original
 const resetbutton = document.querySelector('[type="reset"]');
@@ -80,10 +71,9 @@ resetbutton.addEventListener("click", () => {
   currentData = originalData;
   containerCard.innerHTML = renderItems(currentData);
   const resultchart = computeStats(originalData);
-  const names= resultchart.names;
-  const nroPokemons=resultchart.nroPokemons;
+  const names = resultchart.names;
+  const nroPokemons = resultchart.nroPokemons;
   updateChart(names, nroPokemons);
-
 });
 
 // alfabetic order
@@ -101,38 +91,41 @@ filterType.addEventListener("change", () => {
   renderCurrentData();
 });
 
-const updateChart = (names,nroPokemons)=>{
+const updateChart = (names, nroPokemons) => {
   // eslint-disable-next-line no-undef
   new Chart(stadistic, {
-    type: 'bar',
+    type: "bar",
     data: {
       labels: names,
-      datasets: [{
-        label: '# of Pokemons for type',
-        data: nroPokemons,
-        borderWidth: 1,
-        backgroundColor: '#9BD0F5',
-        font: {
-          size: 14,
-          weight: 'bolder',
-        }
-      }]
+      datasets: [
+        {
+          label: "# of Pokemons for type",
+          data: nroPokemons,
+          borderWidth: 1,
+          backgroundColor: "#9BD0F5",
+          font: {
+            size: 14,
+            weight: "bolder",
+          },
+        },
+      ],
     },
     options: {
       scales: {
         y: {
-          beginAtZero: true
-        }
-      }
-    }
+          beginAtZero: true,
+        },
+      },
+    },
   });
-
-}
+};
 
 const resultchart = computeStats(originalData);
-const names= resultchart.names;
-const nroPokemons=resultchart.nroPokemons;
+const names = resultchart.names;
+const nroPokemons = resultchart.nroPokemons;
 updateChart(names, nroPokemons);
+
+// info
 
 renderCurrentData();
 
