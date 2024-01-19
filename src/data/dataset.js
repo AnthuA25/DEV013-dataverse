@@ -6,7 +6,7 @@ export default [
         "typeName": ["Grass","Poison"],
         "typeImage": ["./assets/planta.png","./assets/veneno.png"],
     },
-    "image": "./assets/Bulbasaur..png",
+    "image": "./assets/Bulbasaur.png",
     "weaknesses":{
       "weaknessesName": [
         "Fire", "Flying", "Ice", "Psychic"
@@ -260,7 +260,7 @@ export default [
       "typeName": ["Electric"],
       "typeImage": ["./assets/electrico.png"],
     },
-    "image": "./assets/Raichu2.png",
+    "image": "./assets/Raichu.png",
     "weaknesses": {
       "weaknessesName": ["Ground"],
       "weaknessesImage": ["./assets/tierra.png"],
