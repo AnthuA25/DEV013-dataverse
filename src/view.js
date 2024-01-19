@@ -74,18 +74,17 @@ export const renderItems = (data) => {
 
     return (html += `
   
-      <dl itemtype="pokemons" itemscope>
-        <dd itemprop="type" ${style} class="type">
+      <li itemtype="pokemons" itemscope>
+        <div itemprop="type" ${style} class="type">
           ${type}
-        </dd>
-        <dd itemprop="image" class="image">
+        </div>
+        <div itemprop="image" class="image">
           <img src=${pokemon.image} alt=${pokemon.name}/>
-        </dd>
-        <dd itemprop="name" class="name">${pokemon.name}</dd>
-        <dt>Debilidades</dt>
-        <dd itemprop="weaknesses" class="weaknesses">${weaknesses}</dd>
-      </dl>
-    
+        </div>
+        <h1 itemprop="name" class="name">${pokemon.name}</h1>
+        <h3>Debilidades</h3>
+        <div itemprop="weaknesses" class="weaknesses">${weaknesses}</div>
+      </li>
     `);
   });
   return html;
