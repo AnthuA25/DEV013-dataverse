@@ -1,4 +1,4 @@
-<h1 style="text-align:center">P<img style="width:50px;" src="./src/assets/pokebola.png"/>kéDex</h1>
+<h1 style="text-align:center">P<img style="width:50px;" src="./src/assets/pokemones/pokebola.png"/>kéDex</h1>
 
 ### 1. Definición del producto
 
