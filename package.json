@@ -4,6 +4,7 @@
   "main": "src/index.html",
   "license": "MIT",
   "scripts": {
+    "homepage": "https://AnthuA25.github.io/DEV013-dataverse",
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",
     "pretest": "npm run eslint && npm run htmlhint",
