@@ -64,12 +64,13 @@ export const computeStats = (originalData) => {
   const nroPokemons = names.map((typeName) =>
     originalData.reduce((accumulator, pokemon) => {
       if (pokemon.type.typeName.includes(typeName)) {
-        return accumulator + 1;
+        accumulator += 1;
       }
       return parseInt(accumulator);
     }, 0)
   );
-  return{
+  return {
     names,nroPokemons
   }
+
 };
