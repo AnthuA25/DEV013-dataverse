@@ -15,6 +15,7 @@ const close = document.querySelector(".fa-xmark");
 const stadistic = document.getElementById("myChart");
 //overlay
 const overlay = document.querySelector(".overlay");
+const resetbutton = document.querySelector('[type="reset"]');
 // const infoPokemons = document.querySelector("dl[itemprop='pokemons']")
 // console.log(infoPokemons)
 
@@ -54,7 +55,7 @@ form.addEventListener("submit", (e) => {
     container.classList.add("container-modal");
     overlay.classList.toggle("overlay-active");
     container.innerHTML = `<i class="fa-solid fa-xmark"></i>
-                            <img src="./assets/icono-cerrar.png" alt="Error"/>
+                            <img src="./assets/pokemones/icono-cerrar.png" alt="Error"/>
                             <p>Pokemon no encontrado</p>`;
     container.querySelector(".fa-xmark").addEventListener("click", () => {
       container.remove();
@@ -66,14 +67,9 @@ form.addEventListener("submit", (e) => {
 });
 
 // Resetear al estado original
-const resetbutton = document.querySelector('[type="reset"]');
 resetbutton.addEventListener("click", () => {
   currentData = originalData;
   containerCard.innerHTML = renderItems(currentData);
-  const resultchart = computeStats(originalData);
-  const names = resultchart.names;
-  const nroPokemons = resultchart.nroPokemons;
-  updateChart(names, nroPokemons);
 });
 
 // alfabetic order

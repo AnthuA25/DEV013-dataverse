@@ -4,14 +4,14 @@ export default [
     "name": "Bulbasaur",
     "type":{
         "typeName": ["Grass","Poison"],
-        "typeImage": ["./assets/planta.png","./assets/veneno.png"],
+        "typeImage": ["./assets/pokemones/planta.png","./assets/pokemones/veneno.png"],
     },
-    "image": "./assets/Bulbasaur.png",
+    "image": "./assets/pokemones/Bulbasaur.png",
     "weaknesses":{
       "weaknessesName": [
         "Fire", "Flying", "Ice", "Psychic"
       ],
-      "weaknessesImage":["./assets/fuego.png","./assets/volador.png","./assets/hielo.png","./assets/psiquico.png"],
+      "weaknessesImage":["./assets/pokemones/fuego.png","./assets/pokemones/volador.png","./assets/pokemones/hielo.png","./assets/pokemones/psiquico.png"],
     },
     "baseStats": {
       "hp": "45",
@@ -29,12 +29,12 @@ export default [
     "name": "Charmander",
     "type":{
       "typeName": ["Fire"],
-      "typeImage":["./assets/fuego.png"],
+      "typeImage":["./assets/pokemones/fuego.png"],
     },
-    "image": "./assets/Charmander.png",
+    "image": "./assets/pokemones/Charmander.png",
     "weaknesses":{
       "weaknessesName": ["Water", "Rock", "Ground"],
-      "weaknessesImage":["./assets/agua.png","./assets/roca.png","./assets/tierra.png"],
+      "weaknessesImage":["./assets/pokemones/agua.png","./assets/pokemones/roca.png","./assets/pokemones/tierra.png"],
     },
     "baseStats": {
       "hp": "39",
@@ -52,12 +52,12 @@ export default [
     "name": "Charmeleon",
     "type": {
       "typeName": ["Fire"],
-      "typeImage": ["./assets/fuego.png"],
+      "typeImage": ["./assets/pokemones/fuego.png"],
     },
-    "image": "./assets/Charmaleon.png",
+    "image": "./assets/pokemones/Charmaleon.png",
     "weaknesses": {
       "weaknessesName": ["Water", "Rock", "Ground"],
-      "weaknessesImage": ["./assets/agua.png", "./assets/roca.png", "./assets/tierra.png"],
+      "weaknessesImage": ["./assets/pokemones/agua.png", "./assets/pokemones/roca.png", "./assets/pokemones/tierra.png"],
     },
     "baseStats": {
       "attack": "64",
@@ -74,12 +74,12 @@ export default [
     "name": "Charizard",
     "type": {
       "typeName": ["Fire", "Flying"],
-      "typeImage": ["./assets/fuego.png", "./assets/volador.png"],
+      "typeImage": ["./assets/pokemones/fuego.png", "./assets/pokemones/volador.png"],
     },
-    "image": "./assets/Charizard.png",
+    "image": "./assets/pokemones/Charizard.png",
     "weaknesses": {
       "weaknessesName": ["Water", "Electric", "Rock"],
-      "weaknessesImage": ["./assets/agua.png", "./assets/electrico.png", "./assets/roca.png"],
+      "weaknessesImage": ["./assets/pokemones/agua.png", "./assets/pokemones/electrico.png", "./assets/pokemones/roca.png"],
     },
     "baseStats": {
       "hp": "78",
@@ -97,12 +97,12 @@ export default [
     "name": "Squirtle",
     "type":{
       "typeName": ["Water"],
-      "typeImage": ["./assets/agua.png"],
+      "typeImage": ["./assets/pokemones/agua.png"],
     },
-    "image": "./assets/Squirtle_2.png",
+    "image": "./assets/pokemones/Squirtle_2.png",
     "weaknesses":{
       "weaknessesName": ["Electric", "Grass"],
-      "weaknessesImage":["./assets/electrico.png","./assets/planta.png"],
+      "weaknessesImage":["./assets/pokemones/electrico.png","./assets/pokemones/planta.png"],
     },
     "baseStats": {
       "hp": "44",
@@ -120,12 +120,12 @@ export default [
     "name": "Wartortle",
     "type": {
       "typeName": ["Water"],
-      "typeImage": ["./assets/agua.png"],
+      "typeImage": ["./assets/pokemones/agua.png"],
     },
-    "image": "./assets/Wartortle.png",
+    "image": "./assets/pokemones/Wartortle.png",
     "weaknesses": {
       "weaknessesName": ["Electric", "Grass"],
-      "weaknessesImage": ["./assets/electrico.png", "./assets/planta.png"],
+      "weaknessesImage": ["./assets/pokemones/electrico.png", "./assets/pokemones/planta.png"],
     },
     "baseStats": {
       "hp": "59",
@@ -143,12 +143,12 @@ export default [
     "name": "Caterpie",
     "type": {
       "typeName": ["Bug"],
-      "typeImage": ["./assets/bicho.png"],
+      "typeImage": ["./assets/pokemones/bicho.png"],
     },
-    "image": "./assets/Caterpie.png",
+    "image": "./assets/pokemones/Caterpie.png",
     "weaknesses": {
       "weaknessesName": ["Flying", "Rock", "Fire"],
-      "weaknessesImage": ["./assets/volador.png", "./assets/roca.png", "./assets/fuego.png"],
+      "weaknessesImage": ["./assets/pokemones/volador.png", "./assets/pokemones/roca.png", "./assets/pokemones/fuego.png"],
     },
     "baseStats": {
       "hp": "45",
@@ -166,12 +166,12 @@ export default [
     "name": "Clefairy",
     "type":{
       "typeName": ["Fairy"],
-      "typeImage":["./assets/hada.png"],
+      "typeImage":["./assets/pokemones/hada.png"],
     },
-    "image": "./assets/Clefairy2.png",
+    "image": "./assets/pokemones/Clefairy2.png",
     "weaknesses":{
       "weaknessesName": ["Steel", "Poison"],
-      "weaknessesImage":["./assets/acero.png","./assets/veneno.png"],
+      "weaknessesImage":["./assets/pokemones/acero.png","./assets/pokemones/veneno.png"],
     },
     "baseStats": {
       "hp": "70",
@@ -189,12 +189,12 @@ export default [
     "name": "Pikachu",
     "type":{
       "typeName": ["Electric"],
-      "typeImage":["./assets/electrico.png"],
+      "typeImage":["./assets/pokemones/electrico.png"],
     },
-    "image": "./assets/Pikachu2.png",
+    "image": "./assets/pokemones/Pikachu2.png",
     "weaknesses":{
       "weaknessesName": ["Ground"],
-      "weaknessesImage":["./assets/tierra.png"],
+      "weaknessesImage":["./assets/pokemones/tierra.png"],
     },
     "baseStats": {
       "hp": "35",
@@ -212,12 +212,12 @@ export default [
     "name": "Diglett",
     "type":{
       "typeName": ["Ground"],
-      "typeImage":["./assets/tierra.png"],
+      "typeImage":["./assets/pokemones/tierra.png"],
     },
-    "image": "./assets/Diglett.png",
+    "image": "./assets/pokemones/Diglett.png",
     "weaknesses":{
       "weaknessesName": ["Water", "Grass", "Ice"],
-      "weaknessesImage":["./assets/agua.png","./assets/planta.png","./assets/hielo.png"],
+      "weaknessesImage":["./assets/pokemones/agua.png","./assets/pokemones/planta.png","./assets/pokemones/hielo.png"],
     },
     "baseStats": {
       "hp": "10",
@@ -235,12 +235,12 @@ export default [
     "name": "Ekans",
     "type":{
       "typeName": ["Poison"],
-      "typeImage":["./assets/veneno.png"],
+      "typeImage":["./assets/pokemones/veneno.png"],
     },
-    "image": "./assets/Ekans.png",
+    "image": "./assets/pokemones/Ekans.png",
     "weaknesses":{
       "weaknessesName": ["Ground", "Psychic"],
-      "weaknessesImage":["./assets/tierra.png","./assets/psiquico.png"],
+      "weaknessesImage":["./assets/pokemones/tierra.png","./assets/pokemones/psiquico.png"],
     },
     "baseStats": {
       "hp": "35",
@@ -258,12 +258,12 @@ export default [
     "name": "Raichu",
     "type": {
       "typeName": ["Electric"],
-      "typeImage": ["./assets/electrico.png"],
+      "typeImage": ["./assets/pokemones/electrico.png"],
     },
-    "image": "./assets/Raichu.png",
+    "image": "./assets/pokemones/Raichu.png",
     "weaknesses": {
       "weaknessesName": ["Ground"],
-      "weaknessesImage": ["./assets/tierra.png"],
+      "weaknessesImage": ["./assets/pokemones/tierra.png"],
     },
     "baseStats": {
       "hp": "60",
@@ -281,12 +281,12 @@ export default [
     "name": "Mankey",
     "type": {
       "typeName": ["Fighting"],
-      "typeImage": ["./assets/lucha.png"],
+      "typeImage": ["./assets/pokemones/lucha.png"],
     },
-    "image": "./assets/Mankey.png",
+    "image": "./assets/pokemones/Mankey.png",
     "weaknesses": {
       "weaknessesName": ["Flying", "Psychic", "Fairy"],
-      "weaknessesImage": ["./assets/volador.png", "./assets/psiquico.png", "./assets/hada.png"],
+      "weaknessesImage": ["./assets/pokemones/volador.png", "./assets/pokemones/psiquico.png", "./assets/pokemones/hada.png"],
     },
     "baseStats": {
       "hp": "40",
@@ -304,12 +304,12 @@ export default [
     "name": "Poliwrath",
     "type": {
       "typeName": ["Water", "Fighting"],
-      "typeImage": ["./assets/agua.png", "./assets/lucha.png"],
+      "typeImage": ["./assets/pokemones/agua.png", "./assets/pokemones/lucha.png"],
     },
-    "image": "./assets/Poliwrath.png",
+    "image": "./assets/pokemones/Poliwrath.png",
     "weaknesses": {
       "weaknessesName": ["Electric", "Grass", "Flying", "Psychic", "Fairy"],
-      "weaknessesImage": ["./assets/electrico.png", "./assets/planta.png", "./assets/volador.png", "./assets/psiquico.png", "./assets/hada.png"],
+      "weaknessesImage": ["./assets/pokemones/electrico.png", "./assets/pokemones/planta.png", "./assets/pokemones/volador.png", "./assets/pokemones/psiquico.png", "./assets/pokemones/hada.png"],
     },
     "baseStats": {
       "hp": "90",
@@ -327,12 +327,12 @@ export default [
     "name": "Abra",
     "type": {
       "typeName": ["Psychic"],
-      "typeImage": ["./assets/psiquico.png"],
+      "typeImage": ["./assets/pokemones/psiquico.png"],
     },
-    "image": "./assets/Abra.png",
+    "image": "./assets/pokemones/Abra.png",
     "weaknesses": {
       "weaknessesName": ["Bug", "Ghost", "Dark"],
-      "weaknessesImage": ["./assets/bicho.png", "./assets/fantasma.png", "./assets/oscuro.png"],
+      "weaknessesImage": ["./assets/pokemones/bicho.png", "./assets/pokemones/fantasma.png", "./assets/pokemones/oscuro.png"],
     },
     "baseStats": {
       "hp": "25",
@@ -350,12 +350,12 @@ export default [
     "name": "Machop",
     "type":{
       "typeName": ["Fighting"],
-      "typeImage":["./assets/lucha.png"],
+      "typeImage":["./assets/pokemones/lucha.png"],
     },
-    "image": "./assets/Machop.png",
+    "image": "./assets/pokemones/Machop.png",
     "weaknesses":{
       "weaknessesName": ["Flying", "Psychic", "Fairy"],
-      "weaknessesImage":["./assets/volador.png","./assets/psiquico.png","./assets/hada.png"],
+      "weaknessesImage":["./assets/pokemones/volador.png","./assets/pokemones/psiquico.png","./assets/pokemones/hada.png"],
     },
     "baseStats": {
       "hp": "70",
@@ -373,12 +373,12 @@ export default [
     "name": "Slowpoke",
     "type": {
       "typeName": ["Water", "Psychic"],
-      "typeImage": ["./assets/agua.png", "./assets/psiquico.png"],
+      "typeImage": ["./assets/pokemones/agua.png", "./assets/pokemones/psiquico.png"],
     },
-    "image": "./assets/Slowpoke.png",
+    "image": "./assets/pokemones/Slowpoke.png",
     "weaknesses": {
       "weaknessesName": ["Electric", "Bug", "Ghost", "Dark"],
-      "weaknessesImage": ["./assets/electrico.png", "./assets/bicho.png", "./assets/fantasma.png", "./assets/oscuro.png"],
+      "weaknessesImage": ["./assets/pokemones/electrico.png", "./assets/pokemones/bicho.png", "./assets/pokemones/fantasma.png", "./assets/pokemones/oscuro.png"],
     },
     "baseStats": {
       "hp": "90",
@@ -396,12 +396,12 @@ export default [
     "name": "Pidgey",
     "type":{
       "typeName": ["Normal","Flying"],
-      "typeImage":["./assets/volador.png","./assets/normal.png"],
+      "typeImage":["./assets/pokemones/volador.png","./assets/pokemones/normal.png"],
     },
-    "image": "./assets/Pidgey.png",
+    "image": "./assets/pokemones/Pidgey.png",
     "weaknesses":{
       "weaknessesName": ["Electric", "Rock"],
-      "weaknessesImage":["./assets/electrico.png","./assets/roca.png"],
+      "weaknessesImage":["./assets/pokemones/electrico.png","./assets/pokemones/roca.png"],
     },
     "baseStats": {
       "hp": "40",
@@ -419,12 +419,12 @@ export default [
     "name": "Ivysaur",
     "type":{
       "typeName": ["Grass","Poison"],
-      "typeImage":["./assets/planta.png","./assets/veneno.png"],
+      "typeImage":["./assets/pokemones/planta.png","./assets/pokemones/veneno.png"],
     },
-    "image": "./assets/Ivysaur.png",
+    "image": "./assets/pokemones/Ivysaur.png",
     "weaknesses":{
       "weaknessesName": ["Fire", "Flying", "Ice", "Psychic"],
-      "weaknessesImage":["./assets/fuego.png","./assets/volador.png","./assets/hielo.png","./assets/psiquico.png"],
+      "weaknessesImage":["./assets/pokemones/fuego.png","./assets/pokemones/volador.png","./assets/pokemones/hielo.png","./assets/pokemones/psiquico.png"],
     },
     "baseStats": {
       "hp": "60",
@@ -442,12 +442,12 @@ export default [
     "name": "Gengar",
     "type": {
       "typeName": ["Ghost", "Poison"],
-      "typeImage": ["./assets/fantasma.png", "./assets/veneno.png"],
+      "typeImage": ["./assets/pokemones/fantasma.png", "./assets/pokemones/veneno.png"],
     },
-    "image": "./assets/Gengar.png",
+    "image": "./assets/pokemones/Gengar.png",
     "weaknesses": {
       "weaknessesName": ["Ghost", "Dark", "Ground"],
-      "weaknessesImage": ["./assets/fantasma.png", "./assets/oscuro.png", "./assets/tierra.png"],
+      "weaknessesImage": ["./assets/pokemones/fantasma.png", "./assets/pokemones/oscuro.png", "./assets/pokemones/tierra.png"],
     },
     "baseStats": {
       "hp": "60",
@@ -465,12 +465,12 @@ export default [
     "name": "Gastly",
     "type":{
       "typeName": ["Ghost","Poison"],
-      "typeImage":["./assets/fantasma.png","./assets/veneno.png"],
+      "typeImage":["./assets/pokemones/fantasma.png","./assets/pokemones/veneno.png"],
     },
-    "image": "./assets/Gastly.png",
+    "image": "./assets/pokemones/Gastly.png",
     "weaknesses":{
       "weaknessesName": ["Ground", "Psychic", "Ghost", "Dark"],
-      "weaknessesImage":["./assets/tierra.png","./assets/psiquico.png","./assets/fantasma.png","./assets/oscuro.png"],
+      "weaknessesImage":["./assets/pokemones/tierra.png","./assets/pokemones/psiquico.png","./assets/pokemones/fantasma.png","./assets/pokemones/oscuro.png"],
     },
     "baseStats": {
       "hp": "30",
@@ -488,12 +488,12 @@ export default [
     "name": "Venonat",
     "type":{
       "typeName": ["Bug","Poison"],
-      "typeImage":["./assets/bicho.png","./assets/veneno.png"],
+      "typeImage":["./assets/pokemones/bicho.png","./assets/pokemones/veneno.png"],
     },
-    "image": "./assets/Venonat.png",
+    "image": "./assets/pokemones/Venonat.png",
     "weaknesses":{
       "weaknessesName": ["Flying", "Rock", "Fire", "Psychic"],
-      "weaknessesImage":["./assets/volador.png","./assets/roca.png","./assets/fuego.png","./assets/psiquico.png"],
+      "weaknessesImage":["./assets/pokemones/volador.png","./assets/pokemones/roca.png","./assets/pokemones/fuego.png","./assets/pokemones/psiquico.png"],
     },
     "baseStats": {
       "hp": "60",
@@ -511,12 +511,12 @@ export default [
     "name": "Cubone",
     "type": {
       "typeName": ["Ground"],
-      "typeImage": ["./assets/tierra.png"],
+      "typeImage": ["./assets/pokemones/tierra.png"],
     },
-    "image": "./assets/Cubone.png",
+    "image": "./assets/pokemones/Cubone.png",
     "weaknesses": {
       "weaknessesName": ["Water", "Grass", "Ice"],
-      "weaknessesImage": ["./assets/agua.png", "./assets/planta.png", "./assets/hielo.png"],
+      "weaknessesImage": ["./assets/pokemones/agua.png", "./assets/pokemones/planta.png", "./assets/pokemones/hielo.png"],
     },
     "baseStats": {
       "hp": "50",
@@ -534,12 +534,12 @@ export default [
     "name": "Chansey",
     "type": {
       "typeName": ["Normal"],
-      "typeImage": ["./assets/normal.png"],
+      "typeImage": ["./assets/pokemones/normal.png"],
     },
-    "image": "./assets/Chansey.png",
+    "image": "./assets/pokemones/Chansey.png",
     "weaknesses": {
       "weaknessesName": ["Fighting"],
-      "weaknessesImage": ["./assets/lucha.png"],
+      "weaknessesImage": ["./assets/pokemones/lucha.png"],
     },
     "baseStats": {
       "hp": "250",
@@ -557,12 +557,12 @@ export default [
     "name": "Scyther",
     "type": {
       "typeName": ["Bug", "Flying"],
-      "typeImage": ["./assets/bicho.png", "./assets/volador.png"],
+      "typeImage": ["./assets/pokemones/bicho.png", "./assets/pokemones/volador.png"],
     },
-    "image": "./assets/Scyther.png",
+    "image": "./assets/pokemones/Scyther.png",
     "weaknesses": {
       "weaknessesName": ["Electric", "Rock", "Ice"],
-      "weaknessesImage": ["./assets/electrico.png", "./assets/roca.png", "./assets/hielo.png"],
+      "weaknessesImage": ["./assets/pokemones/electrico.png", "./assets/pokemones/roca.png", "./assets/pokemones/hielo.png"],
     },
     "baseStats": {
       "hp": "70",
@@ -580,12 +580,12 @@ export default [
     "name": "Jolteon",
     "type": {
       "typeName": ["Electric"],
-      "typeImage": ["./assets/electrico.png"],
+      "typeImage": ["./assets/pokemones/electrico.png"],
     },
-    "image": "./assets/Jolteon.png",
+    "image": "./assets/pokemones/Jolteon.png",
     "weaknesses": {
       "weaknessesName": ["Ground"],
-      "weaknessesImage": ["./assets/tierra.png"],
+      "weaknessesImage": ["./assets/pokemones/tierra.png"],
     },
     "baseStats": {
       "hp": "65",
@@ -603,12 +603,12 @@ export default [
     "name": "Cleffa",
     "type": {
       "typeName": ["Fairy"],
-      "typeImage": ["./assets/hada.png"],
+      "typeImage": ["./assets/pokemones/hada.png"],
     },
-    "image": "./assets/Cleffa.png",
+    "image": "./assets/pokemones/Cleffa.png",
     "weaknesses": {
       "weaknessesName": ["Steel", "Poison"],
-      "weaknessesImage": ["./assets/acero.png", "./assets/veneno.png"],
+      "weaknessesImage": ["./assets/pokemones/acero.png", "./assets/pokemones/veneno.png"],
     },
     "baseStats": {
       "hp": "50",
@@ -626,12 +626,12 @@ export default [
     "name": "Togepi",
     "type": {
       "typeName": ["Fairy"],
-      "typeImage": ["./assets/hada.png"],
+      "typeImage": ["./assets/pokemones/hada.png"],
     },
-    "image": "./assets/Togepi.png",
+    "image": "./assets/pokemones/Togepi.png",
     "weaknesses": {
       "weaknessesName": ["Steel", "Poison"],
-      "weaknessesImage": ["./assets/acero.png", "./assets/veneno.png"],
+      "weaknessesImage": ["./assets/pokemones/acero.png", "./assets/pokemones/veneno.png"],
     },
     "baseStats": {
       "hp": "35",
@@ -649,12 +649,12 @@ export default [
     "name": "Larvitar",
     "type": {
       "typeName": ["Stone", "Ground"],
-      "typeImage": ["./assets/roca.png", "./assets/tierra.png"],
+      "typeImage": ["./assets/pokemones/roca.png", "./assets/pokemones/tierra.png"],
     },
-    "image": "./assets/Larvitar.png",
+    "image": "./assets/pokemones/Larvitar.png",
     "weaknesses": {
       "weaknessesName": ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
-      "weaknessesImage": ["./assets/agua.png", "./assets/planta.png", "./assets/hielo.png", "./assets/lucha.png", "./assets/tierra.png", "./assets/acero.png"],
+      "weaknessesImage": ["./assets/pokemones/agua.png", "./assets/pokemones/planta.png", "./assets/pokemones/hielo.png", "./assets/pokemones/lucha.png", "./assets/pokemones/tierra.png", "./assets/pokemones/acero.png"],
     },
     "baseStats": {
       "hp": "50",
