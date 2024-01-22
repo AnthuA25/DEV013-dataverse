@@ -1,5 +1,5 @@
 {
-  "name": "data-lovers",
+  "name": "dataverse",
   "version": "1.0.0",
   "main": "src/index.html",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "pretest:oas-prompting": "npm run pretest",
     "test:oas-prompting": "jest --verbose tests-read-only/oa/oa-prompting.spec.js",
     "open-coverage-report": "opener ./coverage/lcov-report/index.html",
-    "start": "serve src/",
+    "start": "serve ./src",
     "deploy": "gh-pages -d src"
   },
   "devDependencies": {
