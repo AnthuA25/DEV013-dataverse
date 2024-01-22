@@ -207,6 +207,56 @@ export default [
 ```
 ***
 ## 5. Prompt utilizado
+
+<p align="center">
+<img src="./src/assets/prompt/1.png">
+</p>
+
+<p align="center">
+<img src="./src/assets/prompt/2.png">
+</p>
+
+<p align="center">
+<img src="./src/assets/prompt/3.png">
+</p>
+
+
+<p align="center">
+<img src="./src/assets/prompt/4.png">
+</p>
+
+<p align="center">
+<img src="./src/assets/prompt/5.png">
+</p>
+
+<p align="center">
+<img src="./src/assets/prompt/6.png">
+</p>
+
+<p align="center">
+<img src="./src/assets/prompt/7.png">
+</p>
+
+<p align="center">
+<img src="./src/assets/prompt/8.png">
+</p>
+
+<p align="center">
+<img src="./src/assets/prompt/9.png">
+</p>
+
+<p align="center">
+<img src="./src/assets/prompt/10.png">
+</p>
+
+<p align="center">
+<img src="./src/assets/prompt/11.png">
+</p>
+
+<p align="center">
+<img src="./src/assets/prompt/12.png">
+</p>
+
 ***
 ## 6. Diseño de la Interfaz de Usuaria
 
