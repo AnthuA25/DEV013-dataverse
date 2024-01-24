@@ -16,8 +16,6 @@ const stadistic = document.getElementById("myChart");
 //overlay
 const overlay = document.querySelector(".overlay");
 const resetbutton = document.querySelector('[type="reset"]');
-// const infoPokemons = document.querySelector("dl[itemprop='pokemons']")
-// console.log(infoPokemons)
 
 // Modal
 modal.addEventListener("click", () => {
@@ -124,5 +122,3 @@ updateChart(names, nroPokemons);
 // info
 
 renderCurrentData();
-
-// console.log(pokemonsAverage(originalData))
