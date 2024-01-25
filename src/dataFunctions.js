@@ -5,7 +5,7 @@ export const sortData = (data, sortBy, sortOrder) => {
   if (data.length === 0) {
     return false;
   }
-  const sortedData = data; //create copy array
+  const sortedData = [...data]; //create copy array
   // console.log(sortedData);
 
   sortedData.sort((a, b) => {
@@ -34,15 +34,15 @@ export const computeStats = (originalData) => {
   // eslint-disable-next-line no-undef
   const uniqueType = new Set();
 
-  originalData.forEach((data) =>{
+  originalData.forEach((data) => {
     const types = data.type.typeName;
     types.forEach((el) => {
       uniqueType.add(el);
-    })
-  })
-  
+    });
+  });
+
   names = Array.from(uniqueType);
-  
+
   const nroPokemons = names.map((typeName) =>
     originalData.reduce((accumulator, pokemon) => {
       if (pokemon.type.typeName.includes(typeName)) {
@@ -52,7 +52,7 @@ export const computeStats = (originalData) => {
     }, 0)
   );
   return {
-    names,nroPokemons
-  }
-
+    names,
+    nroPokemons,
+  };
 };

@@ -32,6 +32,7 @@ const originalData = data;
 // current data
 let currentData = originalData;
 
+
 //
 const renderCurrentData = () => {
   containerCard.innerHTML = renderItems(currentData);
@@ -67,7 +68,7 @@ form.addEventListener("submit", (e) => {
 // Resetear al estado original
 resetbutton.addEventListener("click", () => {
   currentData = originalData;
-  containerCard.innerHTML = renderItems(currentData);
+  renderCurrentData();
 });
 
 // alfabetic order
@@ -75,14 +76,25 @@ sortOrderSelect.addEventListener("change", () => {
   const sortOrder = sortOrderSelect.value;
   currentData = sortData(currentData, "name", sortOrder);
   renderCurrentData();
+  console.log("sort",currentData)
 });
 
 // Filter Type
 filterType.addEventListener("change", () => {
   const selectedFilter = filterType.value;
-  currentData = filterData(originalData, "typeName", selectedFilter);
-  currentData = sortData(currentData, "name", sortOrderSelect.value);
-  renderCurrentData();
+  if(currentData){
+    currentData = filterData(originalData, "typeName", selectedFilter);
+    console.log("current filter 1",currentData)
+    renderCurrentData(currentData);
+  }else{
+    currentData = filterData(originalData, "typeName", selectedFilter);
+    console.log("current filter 1",currentData)
+    currentData = sortData(currentData, "name", sortOrderSelect.value);
+    console.log("current filter 2",currentData)
+    renderCurrentData();
+  }
+  // currentData = sortData(currentData, "name", sortOrderSelect.value);
+  // renderCurrentData();
 });
 
 const updateChart = (names, nroPokemons) => {
