@@ -5,7 +5,7 @@ export const sortData = (data, sortBy, sortOrder) => {
   if (data.length === 0) {
     return false;
   }
-  const sortedData = data; //create copy array
+  const sortedData = [...data]; //create copy array
   // console.log(sortedData);
 
   sortedData.sort((a, b) => {
@@ -30,37 +30,19 @@ export const filterData = (data, filterBy, value) => {
 };
 
 export const computeStats = (originalData) => {
-  // const result = data.filter(type => type.type.type_name.includes(value)).length;
-  // return result;
   let names = [];
-  //const nroPokemons = [];
   // eslint-disable-next-line no-undef
   const uniqueType = new Set();
-  // for (let i = 0; i < originalData.length; i++) {
-  //   const types = originalData[i].type.typeName;
-  //   for (let j = 0; j < types.length; j++) {
-  //     uniqueType.add(types[j]);
-  //   }
-  // }
-  originalData.forEach((data) =>{
+
+  originalData.forEach((data) => {
     const types = data.type.typeName;
     types.forEach((el) => {
       uniqueType.add(el);
-    })
-  })
-  
-  names = Array.from(uniqueType);
-  
-  /* let sametypes = 0;
-  for (let i = 0; i < names.length; i++) {
-    sametypes = originalData.filter((type) =>
-      type.type.typeName.includes(names[i])
-    ).length;
-    // console.log(sametypes);
-    nroPokemons.push(sametypes);
-  }  */
+    });
+  });
 
-  //originalData.filter((pokemon) => pokemon.type.typeName.includes(typeName)).length
+  names = Array.from(uniqueType);
+
   const nroPokemons = names.map((typeName) =>
     originalData.reduce((accumulator, pokemon) => {
       if (pokemon.type.typeName.includes(typeName)) {
@@ -70,7 +52,7 @@ export const computeStats = (originalData) => {
     }, 0)
   );
   return {
-    names,nroPokemons
-  }
-
+    names,
+    nroPokemons,
+  };
 };

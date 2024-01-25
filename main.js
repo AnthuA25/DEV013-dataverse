@@ -16,8 +16,6 @@ const stadistic = document.getElementById("myChart");
 //overlay
 const overlay = document.querySelector(".overlay");
 const resetbutton = document.querySelector('[type="reset"]');
-// const infoPokemons = document.querySelector("dl[itemprop='pokemons']")
-// console.log(infoPokemons)
 
 // Modal
 modal.addEventListener("click", () => {
@@ -33,6 +31,7 @@ close.addEventListener("click", () => {
 const originalData = data;
 // current data
 let currentData = originalData;
+
 
 //
 const renderCurrentData = () => {
@@ -69,7 +68,7 @@ form.addEventListener("submit", (e) => {
 // Resetear al estado original
 resetbutton.addEventListener("click", () => {
   currentData = originalData;
-  containerCard.innerHTML = renderItems(currentData);
+  renderCurrentData();
 });
 
 // alfabetic order
@@ -77,14 +76,25 @@ sortOrderSelect.addEventListener("change", () => {
   const sortOrder = sortOrderSelect.value;
   currentData = sortData(currentData, "name", sortOrder);
   renderCurrentData();
+  console.log("sort",currentData)
 });
 
 // Filter Type
 filterType.addEventListener("change", () => {
   const selectedFilter = filterType.value;
-  currentData = filterData(originalData, "typeName", selectedFilter);
-  currentData = sortData(currentData, "name", sortOrderSelect.value);
-  renderCurrentData();
+  if(currentData){
+    currentData = filterData(originalData, "typeName", selectedFilter);
+    console.log("current filter 1",currentData)
+    renderCurrentData(currentData);
+  }else{
+    currentData = filterData(originalData, "typeName", selectedFilter);
+    console.log("current filter 1",currentData)
+    currentData = sortData(currentData, "name", sortOrderSelect.value);
+    console.log("current filter 2",currentData)
+    renderCurrentData();
+  }
+  // currentData = sortData(currentData, "name", sortOrderSelect.value);
+  // renderCurrentData();
 });
 
 const updateChart = (names, nroPokemons) => {
@@ -124,5 +134,3 @@ updateChart(names, nroPokemons);
 // info
 
 renderCurrentData();
-
-// console.log(pokemonsAverage(originalData))
